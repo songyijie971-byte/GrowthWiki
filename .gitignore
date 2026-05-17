@@ -1,0 +1,10 @@
+00_Inbox/raw/
+.claude/
+.obsidian/workspace.json
+
+*.pdf
+*.docx
+*.tmp
+*.log
+.DS_Store
+Thumbs.db

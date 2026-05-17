@@ -1,0 +1,51 @@
+{
+  "collapse-filter": false,
+  "search": "(path:01_Papers OR path:02_TechDocs OR path:03_Concepts) -path:README -path:paper-template -path:techdoc-template -path:concept-template -path:concept-map",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:01_Papers",
+      "color": {
+        "a": 1,
+        "rgb": 6333951
+      }
+    },
+    {
+      "query": "path:02_TechDocs",
+      "color": {
+        "a": 1,
+        "rgb": 16096779
+      }
+    },
+    {
+      "query": "path:03_Concepts",
+      "color": {
+        "a": 1,
+        "rgb": 3467673
+      }
+    },
+    {
+      "query": "path:04_Projects",
+      "color": {
+        "a": 1,
+        "rgb": 10980346
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 2.49913494809689,
+  "lineSizeMultiplier": 3.51643598615917,
+  "collapse-forces": false,
+  "centerStrength": 1,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 2.755675960631043,
+  "close": false
+}
