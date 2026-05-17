@@ -11,34 +11,34 @@
       "query": "path:01_Papers",
       "color": {
         "a": 1,
-        "rgb": 6333951
+        "rgb": 346787
       }
     },
     {
       "query": "path:02_TechDocs",
       "color": {
         "a": 1,
-        "rgb": 16096779
+        "rgb": 718223
       }
     },
     {
       "query": "path:03_Concepts",
       "color": {
         "a": 1,
-        "rgb": 3467673
+        "rgb": 9975273
       }
     },
     {
       "query": "path:04_Projects",
       "color": {
         "a": 1,
-        "rgb": 10980346
+        "rgb": 16486537
       }
     }
   ],
   "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": 0,
+  "textFadeMultiplier": -1.1,
   "nodeSizeMultiplier": 2.49913494809689,
   "lineSizeMultiplier": 3.51643598615917,
   "collapse-forces": false,
@@ -46,6 +46,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 2.755675960631043,
+  "scale": 1.9655560456566474,
   "close": false
 }
