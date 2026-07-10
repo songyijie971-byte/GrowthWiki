@@ -1,6 +1,6 @@
 notify = [ "C:\\Users\\12394\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\1b23c930bdf84ed6\\bin\\node_modules\\@oai\\sky\\bin\\windows\\codex-computer-use.exe", "turn-ended" ]
 model = "gpt-5.5"
-model_reasoning_effort = "xhigh"
+model_reasoning_effort = "medium"
 sandbox_mode = "danger-full-access"
 service_tier = "default"
 
@@ -46,7 +46,7 @@ conversationDetailMode = "STEPS_COMMANDS"
 sansFontSize = 14
 codeFontSize = 13
 ambient-suggestions-enabled = true
-followUpQueueMode = "queue"
+followUpQueueMode = "steer"
 
 [windows]
 sandbox = "elevated"
@@ -106,6 +106,9 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects.'c:\users\12394\documents\codex\2026-07-10\files-mentioned-by-the-user-graduatesync']
+trust_level = "trusted"
+
+[projects.'c:\users\12394\documents\codex\2026-07-10\ban']
 trust_level = "trusted"
 
 [mcp_servers.node_repl]
