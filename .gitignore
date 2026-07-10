@@ -2,8 +2,7 @@
 .claude/
 .obsidian/workspace.json
 
-*.pdf
-*.docx
+~$*.docx
 *.tmp
 *.log
 .DS_Store

@@ -1,0 +1,130 @@
+notify = [ "C:\\Users\\12394\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\1b23c930bdf84ed6\\bin\\node_modules\\@oai\\sky\\bin\\windows\\codex-computer-use.exe", "turn-ended" ]
+model = "gpt-5.5"
+model_reasoning_effort = "xhigh"
+sandbox_mode = "danger-full-access"
+service_tier = "default"
+
+[marketplaces.openai-bundled]
+last_updated = "2026-07-10T05:26:11Z"
+source_type = "local"
+source = '\\?\C:\Users\12394\.codex\.tmp\bundled-marketplaces\openai-bundled'
+
+[marketplaces.openai-primary-runtime]
+last_updated = "2026-07-03T07:21:01Z"
+source_type = "local"
+source = '\\?\C:\Users\12394\.cache\codex-runtimes\codex-primary-runtime\plugins\openai-primary-runtime'
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."template-creator@openai-primary-runtime"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[plugins."chrome@openai-bundled"]
+enabled = true
+
+[features]
+js_repl = false
+
+[desktop]
+conversationDetailMode = "STEPS_COMMANDS"
+sansFontSize = 14
+codeFontSize = 13
+ambient-suggestions-enabled = true
+followUpQueueMode = "queue"
+
+[windows]
+sandbox = "elevated"
+
+[projects.'c:\users\12394\documents\codex\2026-07-03\windows-win10-win11-steam-cs-git']
+trust_level = "trusted"
+
+[projects.'c:\users\12394\documents\codex\2026-07-03\windows-win10-win11-steam-cs-git-2']
+trust_level = "trusted"
+
+[projects.'c:\users\12394\documents\codex\2026-07-03\windows-win10-win11-steam-cs-git-3']
+trust_level = "trusted"
+
+[projects.'c:\users\12394\documents\codex\2026-07-03\ni']
+trust_level = "trusted"
+
+[projects.'c:\users\12394\documents\codex\2026-07-04\plugin-browser-openai-bundled']
+trust_level = "trusted"
+
+[projects.'c:\users\12394\documents\codex\2026-07-04\ka']
+trust_level = "trusted"
+
+[projects.'c:\users\12394\documents\codex\2026-07-04\xi']
+trust_level = "trusted"
+
+[projects.'c:\users\12394\documents\codex\2026-07-05\ni']
+trust_level = "trusted"
+
+[projects.'c:\users\12394\documents\codex\2026-07-05\sh']
+trust_level = "trusted"
+
+[projects.'c:\users\12394\documents\codex\2026-07-06\w-s-m']
+trust_level = "trusted"
+
+[projects.'c:\users\12394\documents\codex\2026-07-07\ni-k']
+trust_level = "trusted"
+
+[projects.'c:\users\12394\documents\codex\2026-07-08\ban']
+trust_level = "trusted"
+
+[projects.'d:\apps\steamapps\common\hades\content\scripts']
+trust_level = "trusted"
+
+[projects.'c:\users\12394\documents\codex\2026-07-09\https-alidocs-dingtalk-com-i-nodes']
+trust_level = "trusted"
+
+[projects.'c:\users\12394\documents\codex\2026-07-10\qu-x']
+trust_level = "trusted"
+
+[projects.'c:\users\12394\documents\codex\2026-07-10\qu']
+trust_level = "trusted"
+
+[projects.'c:\users\12394\documents\codex\2026-07-10\ni-b']
+trust_level = "trusted"
+
+[projects.'c:\users\12394\documents\codex\2026-07-10\ban-s']
+trust_level = "trusted"
+
+[projects.'c:\users\12394\documents\codex\2026-07-10\files-mentioned-by-the-user-graduatesync']
+trust_level = "trusted"
+
+[mcp_servers.node_repl]
+args = []
+command = 'C:\Users\12394\AppData\Local\OpenAI\Codex\runtimes\cua_node\1b23c930bdf84ed6\bin\node_repl.exe'
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = 'C:\Users\12394\AppData\Local\OpenAI\Codex\runtimes\cua_node\1b23c930bdf84ed6\bin\node_modules'
+NODE_REPL_NODE_PATH = 'C:\Users\12394\AppData\Local\OpenAI\Codex\runtimes\cua_node\1b23c930bdf84ed6\bin\node.exe'
+NODE_REPL_TRUSTED_CODE_PATHS = 'C:\Users\12394\.codex'
+CODEX_HOME = 'C:\Users\12394\.codex'
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "566be6ef352eb3de899adc56a9cd7b5e46c8f65b00e56b5630dd7a580e10cbea,97669f77b3ca7114a2df05d55646416ea34b28100c07213ef9f643803449ef2f"
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = "Control the in-app browser in conjunction with the Browser Plugin."
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = "Control the Chrome browser in conjunction with the Chrome Plugin. Prefer this method of controlling Chrome over alternatives (such as Computer Use) unless the user explicitly mentions an alternative."
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+BROWSER_USE_CODEX_APP_VERSION = "26.623.141536"
+SKY_CUA_NATIVE_PIPE = "1"
+SKY_CUA_NATIVE_PIPE_DIRECTORY = '\\.\pipe\codex-computer-use-fe4474dd-1cab-42b4-98fb-24cbb48e812e'
+CODEX_CLI_PATH = 'C:\Users\12394\AppData\Local\OpenAI\Codex\bin\ea1c60319a1dcb19\codex.exe'

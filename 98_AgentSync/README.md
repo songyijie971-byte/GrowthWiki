@@ -5,6 +5,8 @@ This folder contains portable Codex and Claude customizations. It deliberately e
 ## Detected sources
 
 - Codex custom skills: True
+- Codex config.toml: True
+- Codex AGENTS.md: True
 - Claude commands: False
 - Claude rules: False
 - Claude skills: False
