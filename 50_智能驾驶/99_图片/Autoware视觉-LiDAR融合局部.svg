@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">Autoware 相机—LiDAR 投影融合主流程</title>
+  <desc id="desc">LiDAR 三维结果经过外参坐标变换和相机内参投影，与相机检测得到的二维 ROI 匹配，最终输出带相机类别的三维结果。</desc>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .title { font: 700 30px "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; fill: #0f172a; }
+      .lane { font: 700 21px "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; }
+      .box-title { font: 700 19px "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; fill: #0f172a; }
+      .box-sub { font: 15px "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; fill: #475569; }
+      .note { font: 16px "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; fill: #334155; }
+      .arrow { fill: none; stroke: #475569; stroke-width: 3; marker-end: url(#arrow); }
+      .dash { fill: none; stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 7 6; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="598" rx="20" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <text class="title" x="600" y="52" text-anchor="middle">Autoware 相机—LiDAR 投影融合主流程</text>
+
+  <rect x="28" y="86" width="1144" height="190" rx="16" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2"/>
+  <text class="lane" x="54" y="122" fill="#1d4ed8">LiDAR 分支：提供三维位置与形状</text>
+
+  <g filter="url(#shadow)">
+    <rect x="54" y="150" width="190" height="92" rx="14" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+    <text class="box-title" x="149" y="187" text-anchor="middle">3D 点簇 / 目标</text>
+    <text class="box-sub" x="149" y="215" text-anchor="middle">LiDAR 坐标系</text>
+
+    <rect x="310" y="150" width="190" height="92" rx="14" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+    <text class="box-title" x="405" y="187" text-anchor="middle">TF / 外参</text>
+    <text class="box-sub" x="405" y="215" text-anchor="middle">变到相机坐标系</text>
+
+    <rect x="566" y="150" width="210" height="92" rx="14" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+    <text class="box-title" x="671" y="187" text-anchor="middle">CameraInfo / 内参</text>
+    <text class="box-sub" x="671" y="215" text-anchor="middle">投影到图像像素</text>
+
+    <rect x="842" y="150" width="190" height="92" rx="14" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+    <text class="box-title" x="937" y="187" text-anchor="middle">投影区域</text>
+    <text class="box-sub" x="937" y="215" text-anchor="middle">图像中的二维范围</text>
+  </g>
+
+  <path class="arrow" d="M 244 196 H 300"/>
+  <path class="arrow" d="M 500 196 H 556"/>
+  <path class="arrow" d="M 776 196 H 832"/>
+
+  <rect x="28" y="306" width="770" height="190" rx="16" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="2"/>
+  <text class="lane" x="54" y="342" fill="#15803d">相机分支：提供二维框与类别</text>
+
+  <g filter="url(#shadow)">
+    <rect x="54" y="370" width="190" height="92" rx="14" fill="#dcfce7" stroke="#4ade80" stroke-width="2"/>
+    <text class="box-title" x="149" y="407" text-anchor="middle">相机图像</text>
+    <text class="box-sub" x="149" y="435" text-anchor="middle">Image</text>
+
+    <rect x="310" y="370" width="190" height="92" rx="14" fill="#dcfce7" stroke="#4ade80" stroke-width="2"/>
+    <text class="box-title" x="405" y="407" text-anchor="middle">2D 检测器</text>
+    <text class="box-sub" x="405" y="435" text-anchor="middle">识别图像目标</text>
+
+    <rect x="566" y="370" width="190" height="92" rx="14" fill="#dcfce7" stroke="#4ade80" stroke-width="2"/>
+    <text class="box-title" x="661" y="407" text-anchor="middle">ROI + 类别</text>
+    <text class="box-sub" x="661" y="435" text-anchor="middle">例如 car</text>
+  </g>
+
+  <path class="arrow" d="M 244 416 H 300"/>
+  <path class="arrow" d="M 500 416 H 556"/>
+
+  <g filter="url(#shadow)">
+    <rect x="842" y="336" width="190" height="104" rx="16" fill="#fef3c7" stroke="#f59e0b" stroke-width="2.5"/>
+    <text class="box-title" x="937" y="377" text-anchor="middle">投影匹配</text>
+    <text class="box-sub" x="937" y="407" text-anchor="middle">比较重叠关系 / IoU</text>
+
+    <rect x="842" y="490" width="300" height="76" rx="16" fill="#f3e8ff" stroke="#a855f7" stroke-width="2.5"/>
+    <text class="box-title" x="992" y="521" text-anchor="middle">融合后的 3D 结果</text>
+    <text class="box-sub" x="992" y="548" text-anchor="middle">LiDAR 位置和形状 + 相机类别</text>
+  </g>
+
+  <path class="arrow" d="M 937 242 V 326"/>
+  <path class="arrow" d="M 756 416 H 832"/>
+  <path class="arrow" d="M 937 440 V 480"/>
+
+  <path class="dash" d="M 54 538 H 786"/>
+  <text class="note" x="54" y="569">融合前提：外参正确 + 内参正确 + 图像、ROI 与 3D 消息时间匹配</text>
+</svg>

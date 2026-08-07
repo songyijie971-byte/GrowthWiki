@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="450" viewBox="0 0 1200 450">
+  <defs>
+    <style>
+      .title{font:700 30px "Microsoft YaHei",sans-serif;fill:#0f172a}
+      .label{font:700 20px "Microsoft YaHei",sans-serif;fill:#0f172a}
+      .sub{font:17px "Microsoft YaHei",sans-serif;fill:#475569}
+      .box{fill:#fff;stroke-width:3}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="450" rx="24" fill="#fff"/>
+  <text x="600" y="48" text-anchor="middle" class="title">当前 Autoware 点云任务中的位置</text>
+  <rect x="40" y="150" width="220" height="120" rx="18" class="box" stroke="#64748b"/>
+  <text x="150" y="195" text-anchor="middle" class="label">PointCloud2</text>
+  <text x="150" y="225" text-anchor="middle" class="sub">原始或预处理点云</text>
+  <g fill="#64748b">
+    <circle cx="100" cy="245" r="4"/><circle cx="120" cy="235" r="4"/><circle cx="140" cy="250" r="4"/>
+    <circle cx="160" cy="238" r="4"/><circle cx="180" cy="248" r="4"/>
+  </g>
+  <line x1="280" y1="210" x2="375" y2="135" stroke="#2563eb" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="280" y1="210" x2="375" y2="285" stroke="#2563eb" stroke-width="5" marker-end="url(#arrow)"/>
+  <rect x="400" y="75" width="360" height="125" rx="18" class="box" stroke="#16a34a"/>
+  <text x="580" y="118" text-anchor="middle" class="label">autoware_euclidean_cluster</text>
+  <text x="580" y="150" text-anchor="middle" class="sub">按点之间的距离分成点簇</text>
+  <g fill="#16a34a"><circle cx="515" cy="172" r="5"/><circle cx="535" cy="162" r="5"/><circle cx="555" cy="174" r="5"/></g>
+  <g fill="#f97316"><circle cx="610" cy="172" r="5"/><circle cx="630" cy="162" r="5"/><circle cx="650" cy="174" r="5"/></g>
+  <rect x="400" y="250" width="360" height="125" rx="18" class="box" stroke="#7c3aed"/>
+  <text x="580" y="293" text-anchor="middle" class="label">autoware_lidar_centerpoint</text>
+  <text x="580" y="325" text-anchor="middle" class="sub">模型直接从点云检测 3D 物体</text>
+  <rect x="525" y="337" width="110" height="26" fill="none" stroke="#7c3aed" stroke-width="3"/>
+  <line x1="780" y1="137" x2="890" y2="175" stroke="#2563eb" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="780" y1="312" x2="890" y2="245" stroke="#2563eb" stroke-width="5" marker-end="url(#arrow)"/>
+  <rect x="915" y="150" width="245" height="120" rx="18" class="box" stroke="#2563eb"/>
+  <text x="1038" y="192" text-anchor="middle" class="label">点簇 / 3D 目标框</text>
+  <text x="1038" y="225" text-anchor="middle" class="sub">供后续跟踪与规划使用</text>
+  <text x="600" y="420" text-anchor="middle" class="sub">点云拼接合并的是原始空间点；检测结果融合合并的是算法已经输出的目标结果</text>
+</svg>

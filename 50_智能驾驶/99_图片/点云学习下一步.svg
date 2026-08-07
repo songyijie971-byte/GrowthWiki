@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <defs>
+    <style>
+      .title{font:700 30px "Microsoft YaHei",sans-serif;fill:#0f172a}
+      .num{font:700 34px "Microsoft YaHei",sans-serif;fill:#fff}
+      .label{font:700 22px "Microsoft YaHei",sans-serif;fill:#0f172a}
+      .sub{font:17px "Microsoft YaHei",sans-serif;fill:#475569}
+      .card{fill:#f8fafc;stroke:#cbd5e1;stroke-width:2}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="420" rx="24" fill="#fff"/>
+  <text x="600" y="48" text-anchor="middle" class="title">下一步：先看真实数据，再跑 Demo，再确认项目输入</text>
+  <rect x="35" y="85" width="330" height="270" rx="20" class="card"/>
+  <rect x="435" y="85" width="330" height="270" rx="20" class="card"/>
+  <rect x="835" y="85" width="330" height="270" rx="20" class="card"/>
+  <circle cx="85" cy="130" r="28" fill="#2563eb"/><text x="85" y="142" text-anchor="middle" class="num">1</text>
+  <g fill="#64748b">
+    <circle cx="100" cy="205" r="5"/><circle cx="125" cy="190" r="5"/><circle cx="150" cy="220" r="5"/>
+    <circle cx="180" cy="200" r="5"/><circle cx="210" cy="225" r="5"/><circle cx="240" cy="205" r="5"/>
+    <circle cx="270" cy="230" r="5"/><circle cx="305" cy="198" r="5"/><circle cx="125" cy="255" r="5"/>
+    <circle cx="165" cy="270" r="5"/><circle cx="220" cy="260" r="5"/><circle cx="285" cy="272" r="5"/>
+  </g>
+  <text x="200" y="310" text-anchor="middle" class="label">观察真实点云</text>
+  <text x="200" y="335" text-anchor="middle" class="sub">认出车辆、行人和地面的形状</text>
+  <circle cx="485" cy="130" r="28" fill="#16a34a"/><text x="485" y="142" text-anchor="middle" class="num">2</text>
+  <rect x="495" y="170" width="210" height="115" rx="12" fill="#0f172a"/>
+  <text x="515" y="202" font-family="Consolas,monospace" font-size="17" fill="#86efac">cluster_demo</text>
+  <text x="515" y="232" font-family="Consolas,monospace" font-size="17" fill="#e2e8f0">threshold = 0.5</text>
+  <circle cx="535" cy="262" r="6" fill="#f97316"/><circle cx="560" cy="252" r="6" fill="#f97316"/>
+  <circle cx="635" cy="262" r="6" fill="#38bdf8"/><circle cx="660" cy="252" r="6" fill="#38bdf8"/>
+  <text x="600" y="310" text-anchor="middle" class="label">运行 CPU 聚类 Demo</text>
+  <text x="600" y="335" text-anchor="middle" class="sub">改变距离阈值并观察分组变化</text>
+  <circle cx="885" cy="130" r="28" fill="#7c3aed"/><text x="885" y="142" text-anchor="middle" class="num">3</text>
+  <rect x="900" y="170" width="210" height="115" rx="12" fill="#f5f3ff" stroke="#a78bfa" stroke-width="2"/>
+  <text x="925" y="205" class="sub">□ LiDAR 型号</text>
+  <text x="925" y="235" class="sub">□ PointCloud2 Topic</text>
+  <text x="925" y="265" class="sub">□ rosbag 与对应功能包</text>
+  <text x="1000" y="310" text-anchor="middle" class="label">确认项目事实</text>
+  <text x="1000" y="335" text-anchor="middle" class="sub">向老师核对真实输入与使用的包</text>
+  <line x1="375" y1="220" x2="415" y2="220" stroke="#2563eb" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="775" y1="220" x2="815" y2="220" stroke="#2563eb" stroke-width="5" marker-end="url(#arrow)"/>
+  <text x="600" y="397" text-anchor="middle" class="sub">只有真实运行过的结果才标记为完成；当前仍是待验证</text>
+</svg>

@@ -1,0 +1,37 @@
+{
+  "collapse-filter": false,
+  "search": "(path:\"10_ROS2/02_概念卡片\" -file:\"README\") OR path:\"50_智能驾驶/01_基础概念\" OR path:\"50_智能驾驶/智能驾驶\"",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"10_ROS2/02_概念卡片\" -file:\"README\"",
+      "color": {
+        "a": 1,
+        "rgb": 5011624
+      }
+    },
+    {
+      "query": "path:\"50_智能驾驶/01_基础概念\" OR path:\"50_智能驾驶/智能驾驶\"",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.12,
+  "lineSizeMultiplier": 1.18,
+  "collapse-forces": true,
+  "centerStrength": 0.25,
+  "repelStrength": 20,
+  "linkStrength": 1,
+  "linkDistance": 360,
+  "scale": 0.9860201267127253,
+  "close": true
+}

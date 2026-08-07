@@ -1,0 +1,16 @@
+# 本地工具、Codex 工作目录与临时构建产物
+.agents/
+.codex/
+.codex_tmp/
+.codex_tmp_*/
+tmp/
+
+# Obsidian 的机器相关状态，不在多台电脑之间同步
+.obsidian/workspace.json
+
+# 常见临时文件
+~$*.docx
+*.tmp
+*.log
+.DS_Store
+Thumbs.db

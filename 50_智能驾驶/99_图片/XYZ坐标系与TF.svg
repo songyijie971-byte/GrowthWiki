@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="450" viewBox="0 0 1200 450">
+  <defs>
+    <style>
+      .title{font:700 30px "Microsoft YaHei",sans-serif;fill:#0f172a}
+      .label{font:700 21px "Microsoft YaHei",sans-serif;fill:#0f172a}
+      .sub{font:18px "Microsoft YaHei",sans-serif;fill:#475569}
+    </style>
+    <marker id="red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#ef4444"/></marker>
+    <marker id="green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#16a34a"/></marker>
+    <marker id="blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#2563eb"/></marker>
+  </defs>
+  <rect width="1200" height="450" rx="24" fill="#fff"/>
+  <text x="600" y="48" text-anchor="middle" class="title">XYZ 轴定义“从哪里量、朝哪里量”</text>
+  <rect x="45" y="88" width="480" height="300" rx="20" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="175" y="180" width="220" height="105" rx="28" fill="#cbd5e1" stroke="#334155" stroke-width="4"/>
+  <rect x="220" y="145" width="125" height="60" rx="20" fill="#93c5fd" stroke="#334155" stroke-width="4"/>
+  <circle cx="220" cy="290" r="24" fill="#1e293b"/><circle cx="355" cy="290" r="24" fill="#1e293b"/>
+  <circle cx="285" cy="230" r="8" fill="#0f172a"/>
+  <line x1="285" y1="230" x2="455" y2="230" stroke="#ef4444" stroke-width="6" marker-end="url(#red)"/>
+  <line x1="285" y1="230" x2="175" y2="330" stroke="#16a34a" stroke-width="6" marker-end="url(#green)"/>
+  <line x1="285" y1="230" x2="285" y2="105" stroke="#2563eb" stroke-width="6" marker-end="url(#blue)"/>
+  <text x="470" y="224" class="label" fill="#ef4444">x：前后</text>
+  <text x="85" y="353" class="label" fill="#16a34a">y：左右</text>
+  <text x="300" y="118" class="label" fill="#2563eb">z：上下</text>
+  <rect x="635" y="88" width="520" height="300" rx="20" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+  <rect x="680" y="140" width="170" height="90" rx="15" fill="#fff" stroke="#2563eb" stroke-width="3"/>
+  <text x="765" y="177" text-anchor="middle" class="label">lidar_frame</text>
+  <text x="765" y="205" text-anchor="middle" class="sub">雷达自己的尺子</text>
+  <rect x="940" y="250" width="170" height="90" rx="15" fill="#fff" stroke="#16a34a" stroke-width="3"/>
+  <text x="1025" y="287" text-anchor="middle" class="label">base_link</text>
+  <text x="1025" y="315" text-anchor="middle" class="sub">小车坐标系</text>
+  <path d="M850 205 C910 205 915 270 940 282" fill="none" stroke="#7c3aed" stroke-width="5" marker-end="url(#blue)"/>
+  <text x="920" y="190" text-anchor="middle" class="label" fill="#7c3aed">TF：旋转 + 平移</text>
+  <text x="895" y="365" text-anchor="middle" class="sub">frame_id 告诉系统：这份 PointCloud2 属于哪个坐标系</text>
+  <text x="600" y="425" text-anchor="middle" class="sub">坐标系不统一时，同一辆车会在合并结果中出现错位或重影</text>
+</svg>

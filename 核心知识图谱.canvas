@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"id":"f000000000000003","type":"group","x":2250,"y":700,"width":3600,"height":1600,"color":"#59A14F","label":"智能驾驶主线"},
+		{"id":"f000000000000002","type":"group","x":40,"y":700,"width":2150,"height":1600,"color":"#4C78A8","label":"ROS 2 基础骨架"},
+		{"id":"f000000000000001","type":"group","x":0,"y":0,"width":5850,"height":520,"color":"#4C78A8","label":"阅读导航"},
+		{"id":"f100000000000001","type":"text","text":"## 三条阅读路径\n\n1. **结构**：Workspace → Package → Node\n2. **通信**：Node → Topic / Service → 通信方式对比\n3. **感知**：点云基础 → LiDAR 节点 → 输出接口 → 相机—LiDAR 融合\n\n跨分区的绿色连线表示 ROS 2 消息如何进入感知主线。","x":1500,"y":120,"width":2300,"height":270},
+		{"id":"293a4b5c6d7e8f90","type":"file","file":"50_智能驾驶/01_基础概念/01_LiDAR 点云基础.md","x":2400,"y":1250,"width":500,"height":300,"color":"#59A14F"},
+		{"id":"4b5c6d7e8f901234","type":"file","file":"50_智能驾驶/01_基础概念/02_Autoware LiDAR 感知节点.md","x":3250,"y":1250,"width":500,"height":300,"color":"#59A14F"},
+		{"id":"0102030405060708","type":"text","text":"# 核心知识图谱\n\n## ROS 2 → LiDAR 感知 → 投影融合\n\n只保留已经建立的核心概念；细节通过下钻图展开。","x":140,"y":120,"width":1200,"height":270,"color":"#4C78A8"},
+		{"id":"18293a4b5c6d7e8f","type":"file","file":"50_智能驾驶/智能驾驶.md","x":3800,"y":830,"width":500,"height":280,"color":"#59A14F"},
+		{"id":"5c6d7e8f90123456","type":"file","file":"50_智能驾驶/01_基础概念/03_LiDAR 输出与相机融合接口.md","x":4100,"y":1250,"width":500,"height":300,"color":"#59A14F"},
+		{"id":"f100000000000002","type":"text","text":"## 连线图例\n\n- 🔵 结构 / 包含\n- 🔴 依赖 / 接入前提\n- 🟢 数据 / 消息 / 处理流\n- 🟠 对比 / 选择\n\n**按箭头方向读连线文字。**","x":3950,"y":120,"width":1100,"height":270},
+		{"id":"f200000000000001","type":"text","text":"## 继续下钻\n\n[[LiDAR 感知与融合接口细化.canvas|打开 LiDAR 感知与融合接口细化图]]\n\n四条并行算法 × 三类 ROI fusion 接口","x":3565,"y":1800,"width":720,"height":300,"color":"#6F4BA1"},
+		{"id":"3a4b5c6d7e8f9012","type":"file","file":"50_智能驾驶/01_基础概念/04_相机—LiDAR 投影融合.md","x":4950,"y":1250,"width":500,"height":300,"color":"#59A14F"},
+		{"id":"c1d2e3f405162738","type":"file","file":"10_ROS2/02_概念卡片/Package（功能包）.md","x":630,"y":1250,"width":360,"height":230,"color":"#4C78A8"},
+		{"id":"d1e2f30415263748","type":"file","file":"10_ROS2/02_概念卡片/Node（节点）.md","x":1120,"y":1250,"width":360,"height":230,"color":"#4C78A8"},
+		{"id":"0718293a4b5c6d7e","type":"file","file":"10_ROS2/02_概念卡片/Topic、Service、Action 的区别与联系.md","x":1610,"y":1690,"width":430,"height":270,"color":"#F28E2B"},
+		{"id":"e1f2031425364758","type":"file","file":"10_ROS2/02_概念卡片/Topic（话题）.md","x":1610,"y":1250,"width":360,"height":230,"color":"#4C78A8"},
+		{"id":"a1b2c3d4e5f60718","type":"file","file":"10_ROS2/02_概念卡片/ROS 2 系统架构与核心能力.md","x":780,"y":830,"width":520,"height":260,"color":"#4C78A8"},
+		{"id":"b1c2d3e4f5061728","type":"file","file":"10_ROS2/02_概念卡片/Workspace（工作空间）.md","x":140,"y":1250,"width":360,"height":230,"color":"#4C78A8"},
+		{"id":"f102132435465768","type":"file","file":"10_ROS2/02_概念卡片/Service（服务）.md","x":1120,"y":1685,"width":360,"height":230,"color":"#E15759"}
+	],
+	"edges":[
+		{"id":"1111111111111111","fromNode":"b1c2d3e4f5061728","fromSide":"right","toNode":"c1d2e3f405162738","toSide":"left","color":"#4C78A8","label":"工作空间包含功能包"},
+		{"id":"2222222222222222","fromNode":"c1d2e3f405162738","fromSide":"right","toNode":"d1e2f30415263748","toSide":"left","color":"#4C78A8","label":"功能包提供节点"},
+		{"id":"3333333333333333","fromNode":"a1b2c3d4e5f60718","fromSide":"bottom","toNode":"d1e2f30415263748","toSide":"top","color":"#4C78A8","label":"系统由节点协作运行"},
+		{"id":"7777777777777777","fromNode":"d1e2f30415263748","fromSide":"right","toNode":"e1f2031425364758","toSide":"left","color":"#59A14F","label":"节点通过 Topic 传数据"},
+		{"id":"8888888888888888","fromNode":"f102132435465768","fromSide":"top","toNode":"d1e2f30415263748","toSide":"bottom","color":"#E15759","label":"Service 依赖节点提供或调用"},
+		{"id":"9999999999999999","fromNode":"e1f2031425364758","fromSide":"bottom","toNode":"0718293a4b5c6d7e","toSide":"top","color":"#F28E2B","label":"在比较页中对照"},
+		{"id":"aaaaaaaaaaaaaaaa","fromNode":"f102132435465768","fromSide":"right","toNode":"0718293a4b5c6d7e","toSide":"left","color":"#F28E2B","label":"在比较页中对照"},
+		{"id":"bbbbbbbbbbbbbbbb","fromNode":"18293a4b5c6d7e8f","fromSide":"bottom","toNode":"293a4b5c6d7e8f90","toSide":"top","color":"#4C78A8","label":"包含：点云感知"},
+		{"id":"cccccccccccccccc","fromNode":"18293a4b5c6d7e8f","fromSide":"bottom","toNode":"3a4b5c6d7e8f9012","toSide":"top","color":"#4C78A8","label":"包含：多传感器融合"},
+		{"id":"dddddddddddddddd","fromNode":"293a4b5c6d7e8f90","fromSide":"right","toNode":"4b5c6d7e8f901234","toSide":"left","color":"#59A14F","label":"进入感知算法"},
+		{"id":"0f0f0f0f0f0f0f0f","fromNode":"4b5c6d7e8f901234","fromSide":"right","toNode":"5c6d7e8f90123456","toSide":"left","color":"#59A14F","label":"按输出选接口"},
+		{"id":"ffffffffffffffff","fromNode":"5c6d7e8f90123456","fromSide":"right","toNode":"3a4b5c6d7e8f9012","toSide":"left","color":"#59A14F","label":"接入投影融合"},
+		{"id":"2000000000000002","fromNode":"e1f2031425364758","fromSide":"right","toNode":"293a4b5c6d7e8f90","toSide":"left","color":"#59A14F","label":"传输 PointCloud2"},
+		{"id":"f300000000000001","fromNode":"4b5c6d7e8f901234","fromSide":"bottom","toNode":"f200000000000001","toSide":"top","color":"#6F4BA1","label":"展开算法与融合接口"}
+	]
+}

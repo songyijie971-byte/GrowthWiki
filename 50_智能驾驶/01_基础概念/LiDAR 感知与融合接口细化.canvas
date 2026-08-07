@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"id":"g000000000000004","type":"group","x":0,"y":1920,"width":3300,"height":650,"color":"#5B6472","label":"路线 C｜目标级"},
+		{"id":"g000000000000002","type":"group","x":0,"y":560,"width":3300,"height":600,"color":"#5B6472","label":"路线 A｜点云级"},
+		{"id":"g000000000000003","type":"group","x":0,"y":1240,"width":3300,"height":600,"color":"#5B6472","label":"路线 B｜点簇级"},
+		{"id":"g000000000000001","type":"group","x":0,"y":0,"width":3300,"height":460,"color":"#4C78A8","label":"读图规则"},
+		{"id":"g000000000000005","type":"group","x":0,"y":2650,"width":3300,"height":370,"color":"#F28E2B","label":"两个容易混淆的旁路"},
+		{"id":"h000000000000001","type":"text","text":"# LiDAR 感知与融合接口细化\n\n## 算法来源 → 输出消息 → 融合接口 → 结果\n\n四个 LiDAR 包是**并行方案**，不是首尾相接的流水线。\n\n> 当前按文档接口整理；组内版本、Topic remap、点字段和时间戳仍待运行验证。","x":100,"y":70,"width":1400,"height":300,"color":"#4C78A8"},
+		{"id":"h000000000000002","type":"text","text":"# 三种 ROI fusion 的共同前提\n\n- **2D ROIs**：相机检测框与类别\n- **TF / 外参**：LiDAR 坐标 → 相机坐标\n- **`CameraInfo` / 内参**：相机 3D → 图像像素\n- **时间匹配**：让两边描述相近时刻","x":1600,"y":70,"width":1600,"height":300,"color":"#E15759"},
+		{"id":"a000000000000002","type":"text","text":"# ② `PointCloud2`\n\n## 点云消息\n\nFRNet 路线可能额外包含\n`class_id + probability`\n\n尚未区分目标实例","x":900,"y":670,"width":700,"height":280,"color":"#4C78A8"},
+		{"id":"a000000000000003","type":"text","text":"# ③ 点云级 ROI fusion\n\n## `roi_pointcloud_fusion`\n\n直接接 `PointCloud2`\n\n从 2D ROI 中抽取 / 细化点簇","x":1700,"y":670,"width":700,"height":280,"color":"#6F4BA1"},
+		{"id":"a000000000000004","type":"text","text":"# ④ ROI 点簇\n\n## `DetectedObjectsWithFeature`\n\n保留目标点簇，可继续做形状估计\n\n> FRNet 字段兼容性仍需运行验证","x":2500,"y":670,"width":700,"height":280,"color":"#59A14F"},
+		{"id":"a000000000000005","type":"text","text":"## 代码里怎么认\n\n搜 `PointCloud2`、`input/pointcloud`、`frame_id` 和 `fields`；FRNet 路线还要核对 `class_id` / `probability`、Topic remap 与时间戳。","x":100,"y":990,"width":3100,"height":110,"color":"#4C78A8"},
+		{"id":"b000000000000001","type":"text","text":"# ① Apollo 实例分割\n\n## Apollo Instance Segmentation\n\n把点组织成带标签的目标点簇","x":100,"y":1350,"width":700,"height":280,"color":"#F28E2B"},
+		{"id":"b000000000000002","type":"text","text":"# ② 带点簇的目标\n\n## `DetectedObjectsWithFeature`\n\n保留组成目标的点\n\n适合继续做点簇级融合","x":900,"y":1350,"width":700,"height":280,"color":"#4C78A8"},
+		{"id":"b000000000000003","type":"text","text":"# ③ 点簇级 ROI fusion\n\n## `roi_cluster_fusion`\n\n输入 3D 点簇 + 2D ROI\n\n用相机类别更新点簇","x":1700,"y":1350,"width":700,"height":280,"color":"#6F4BA1"},
+		{"id":"b000000000000004","type":"text","text":"# ④ 融合后点簇\n\n## `DetectedObjectsWithFeature`\n\n点簇和 3D 信息仍保留\n\n分类信息被相机结果更新","x":2500,"y":1350,"width":700,"height":280,"color":"#59A14F"},
+		{"id":"b000000000000005","type":"text","text":"## 代码里怎么认\n\n先确认输出消息是 `DetectedObjectsWithFeature`，再看融合节点是否订阅 2D `rois`；点簇仍保留，融合前后消息类型不变。","x":100,"y":1670,"width":3100,"height":110,"color":"#4C78A8"},
+		{"id":"c000000000000001","type":"text","text":"# ① 3D 目标来源\n\n## 三种路线\n\n- CenterPoint：3D 目标检测\n- LiDAR TransFusion：当前只使用点云\n- FRNet → `label_based_euclidean_cluster`","x":100,"y":2030,"width":700,"height":310,"color":"#F28E2B"},
+		{"id":"c000000000000002","type":"text","text":"# ② `DetectedObjects`\n\n## 完整 3D 目标消息\n\n类别 + 置信度 + 位置 + 3D shape\n\n已经区分目标实例","x":900,"y":2030,"width":700,"height":310,"color":"#4C78A8"},
+		{"id":"c000000000000003","type":"text","text":"# ③ 目标级 ROI fusion\n\n## `roi_detected_object_fusion`\n\n输入 3D 目标 + 2D ROI\n\n用相机类别更新目标","x":1700,"y":2030,"width":700,"height":310,"color":"#6F4BA1"},
+		{"id":"c000000000000004","type":"text","text":"# ④ 融合后 3D 目标\n\n## `DetectedObjects`\n\n类别由相机结果补充 / 更新\n\n3D 几何仍来自 LiDAR 感知","x":2500,"y":2030,"width":700,"height":310,"color":"#59A14F"},
+		{"id":"c000000000000005","type":"text","text":"## 代码里怎么认\n\n看 `DetectedObjects`、`output/objects`、`classification`、`existence_probability`、`kinematics` 和 `shape`；确认融合后仍输出 3D 消息。","x":100,"y":2380,"width":3100,"height":120,"color":"#4C78A8"},
+		{"id":"m000000000000001","type":"text","text":"# `label_based_euclidean_cluster`\n\n语义点 → 目标实例；只做 LiDAR 后处理，**不订阅相机 ROI**。","x":100,"y":2750,"width":1500,"height":180,"color":"#F28E2B"},
+		{"id":"m000000000000002","type":"text","text":"# `pointpainting_fusion`\n\n把 2D 类别分数附到每个 LiDAR 点，再送入 3D 检测网络；**不属于本图三种 `roi_*_fusion`**。","x":1700,"y":2750,"width":1500,"height":180,"color":"#6F4BA1"},
+		{"id":"a000000000000001","type":"text","text":"# ① 点云来源 / FRNet\n\n## 原始或预处理点云\n\nFRNet：逐点语义分割\n\n每个点增加类别与概率","x":-160,"y":850,"width":700,"height":280,"color":"#F28E2B"}
+	],
+	"edges":[
+		{"id":"e000000000000001","fromNode":"a000000000000001","fromSide":"right","toNode":"a000000000000002","toSide":"left","color":"#59A14F"},
+		{"id":"e000000000000002","fromNode":"a000000000000002","fromSide":"right","toNode":"a000000000000003","toSide":"left","color":"#59A14F"},
+		{"id":"e000000000000003","fromNode":"a000000000000003","fromSide":"right","toNode":"a000000000000004","toSide":"left","color":"#59A14F"},
+		{"id":"e000000000000004","fromNode":"b000000000000001","fromSide":"right","toNode":"b000000000000002","toSide":"left","color":"#59A14F"},
+		{"id":"e000000000000005","fromNode":"b000000000000002","fromSide":"right","toNode":"b000000000000003","toSide":"left","color":"#59A14F"},
+		{"id":"e000000000000006","fromNode":"b000000000000003","fromSide":"right","toNode":"b000000000000004","toSide":"left","color":"#59A14F"},
+		{"id":"e000000000000007","fromNode":"c000000000000001","fromSide":"right","toNode":"c000000000000002","toSide":"left","color":"#59A14F"},
+		{"id":"e000000000000008","fromNode":"c000000000000002","fromSide":"right","toNode":"c000000000000003","toSide":"left","color":"#59A14F"},
+		{"id":"e000000000000009","fromNode":"c000000000000003","fromSide":"right","toNode":"c000000000000004","toSide":"left","color":"#59A14F"}
+	]
+}

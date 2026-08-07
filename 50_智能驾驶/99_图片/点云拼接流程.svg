@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <style>
+      .title{font:700 32px "Microsoft YaHei",sans-serif;fill:#0f172a}
+      .panel-title{font:700 25px "Microsoft YaHei",sans-serif;fill:#0f172a}
+      .label{font:700 19px "Microsoft YaHei",sans-serif;fill:#0f172a}
+      .sub{font:16px "Microsoft YaHei",sans-serif;fill:#475569}
+      .small{font:14px "Microsoft YaHei",sans-serif;fill:#64748b}
+    </style>
+    <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#7c3aed"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="600" rx="24" fill="#ffffff"/>
+  <text x="600" y="48" text-anchor="middle" class="title">点云拼接的两种情况</text>
+
+  <!-- 情况一：多雷达 -->
+  <rect x="30" y="78" width="555" height="475" rx="22" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+  <circle cx="72" cy="117" r="23" fill="#2563eb"/>
+  <text x="72" y="125" text-anchor="middle" font-family="Microsoft YaHei,sans-serif" font-size="24" font-weight="700" fill="#fff">1</text>
+  <text x="310" y="125" text-anchor="middle" class="panel-title">多个 LiDAR：同一时刻扫描</text>
+  <text x="310" y="153" text-anchor="middle" class="sub">不同安装位置的雷达同时观察同一环境</text>
+
+  <!-- vehicle -->
+  <rect x="198" y="254" width="165" height="74" rx="22" fill="#cbd5e1" stroke="#334155" stroke-width="3"/>
+  <rect x="230" y="225" width="100" height="48" rx="16" fill="#93c5fd" stroke="#334155" stroke-width="3"/>
+  <circle cx="235" cy="330" r="20" fill="#1e293b"/>
+  <circle cx="330" cy="330" r="20" fill="#1e293b"/>
+
+  <!-- LiDAR A -->
+  <rect x="214" y="210" width="34" height="22" rx="5" fill="#2563eb" stroke="#0f172a" stroke-width="2"/>
+  <text x="154" y="211" class="label" fill="#2563eb">LiDAR A</text>
+  <g fill="none" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="4 7">
+    <path d="M231 221 Q120 176 70 250"/>
+    <path d="M231 221 Q120 214 75 310"/>
+    <path d="M231 221 Q155 300 95 365"/>
+  </g>
+  <g fill="#2563eb">
+    <circle cx="80" cy="248" r="5"/><circle cx="100" cy="270" r="5"/><circle cx="120" cy="292" r="5"/>
+    <circle cx="95" cy="365" r="5"/><circle cx="125" cy="345" r="5"/><circle cx="150" cy="325" r="5"/>
+  </g>
+
+  <!-- LiDAR B -->
+  <rect x="314" y="210" width="34" height="22" rx="5" fill="#f97316" stroke="#0f172a" stroke-width="2"/>
+  <text x="365" y="211" class="label" fill="#f97316">LiDAR B</text>
+  <g fill="none" stroke="#f97316" stroke-width="2.5" stroke-dasharray="4 7">
+    <path d="M331 221 Q450 175 525 245"/>
+    <path d="M331 221 Q460 215 525 310"/>
+    <path d="M331 221 Q420 300 500 365"/>
+  </g>
+  <g fill="#f97316">
+    <circle cx="520" cy="245" r="5"/><circle cx="500" cy="270" r="5"/><circle cx="480" cy="292" r="5"/>
+    <circle cx="500" cy="365" r="5"/><circle cx="470" cy="345" r="5"/><circle cx="445" cy="325" r="5"/>
+  </g>
+
+  <rect x="95" y="394" width="430" height="55" rx="14" fill="#fff" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="310" y="418" text-anchor="middle" class="label">外参变换：雷达 A / B → 车体坐标系</text>
+  <text x="310" y="440" text-anchor="middle" class="small">把不同雷达的点对齐后合并</text>
+  <line x1="310" y1="455" x2="310" y2="495" stroke="#2563eb" stroke-width="4" marker-end="url(#arrow-blue)"/>
+  <g fill="#2563eb"><circle cx="235" cy="516" r="5"/><circle cx="265" cy="505" r="5"/><circle cx="295" cy="520" r="5"/></g>
+  <g fill="#f97316"><circle cx="300" cy="520" r="5"/><circle cx="330" cy="505" r="5"/><circle cx="360" cy="516" r="5"/></g>
+  <text x="310" y="542" text-anchor="middle" class="label">得到更宽视野的合并点云</text>
+
+  <!-- 情况二：单雷达多时刻 -->
+  <rect x="615" y="78" width="555" height="475" rx="22" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="2"/>
+  <circle cx="657" cy="117" r="23" fill="#7c3aed"/>
+  <text x="657" y="125" text-anchor="middle" font-family="Microsoft YaHei,sans-serif" font-size="24" font-weight="700" fill="#fff">2</text>
+  <text x="895" y="125" text-anchor="middle" class="panel-title">单个 LiDAR：不同时刻扫描</text>
+  <text x="895" y="153" text-anchor="middle" class="sub">车辆移动后，同一雷达再次观察同一环境</text>
+
+  <!-- static target -->
+  <rect x="1035" y="206" width="74" height="142" rx="8" fill="#94a3b8"/>
+  <rect x="1050" y="225" width="18" height="22" fill="#dbeafe"/>
+  <rect x="1080" y="225" width="18" height="22" fill="#dbeafe"/>
+  <rect x="1050" y="265" width="18" height="22" fill="#dbeafe"/>
+  <rect x="1080" y="265" width="18" height="22" fill="#dbeafe"/>
+  <text x="1072" y="371" text-anchor="middle" class="small">同一静态环境</text>
+
+  <!-- t1 car -->
+  <g opacity=".78">
+    <rect x="670" y="285" width="135" height="57" rx="18" fill="#bfdbfe" stroke="#2563eb" stroke-width="3"/>
+    <rect x="698" y="259" width="78" height="38" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+    <circle cx="704" cy="344" r="16" fill="#1e293b"/><circle cx="772" cy="344" r="16" fill="#1e293b"/>
+    <rect x="724" y="246" width="28" height="18" rx="4" fill="#2563eb"/>
+  </g>
+  <text x="738" y="231" text-anchor="middle" class="label" fill="#2563eb">时刻 t₁</text>
+  <g fill="none" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="4 7">
+    <line x1="738" y1="255" x2="1038" y2="225"/>
+    <line x1="738" y1="255" x2="1038" y2="285"/>
+    <line x1="738" y1="255" x2="1038" y2="335"/>
+  </g>
+
+  <!-- t2 car -->
+  <rect x="855" y="285" width="135" height="57" rx="18" fill="#ddd6fe" stroke="#7c3aed" stroke-width="3"/>
+  <rect x="883" y="259" width="78" height="38" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/>
+  <circle cx="889" cy="344" r="16" fill="#1e293b"/><circle cx="957" cy="344" r="16" fill="#1e293b"/>
+  <rect x="909" y="246" width="28" height="18" rx="4" fill="#7c3aed"/>
+  <text x="923" y="231" text-anchor="middle" class="label" fill="#7c3aed">时刻 t₂</text>
+  <g fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="4 7">
+    <line x1="923" y1="255" x2="1038" y2="225"/>
+    <line x1="923" y1="255" x2="1038" y2="285"/>
+    <line x1="923" y1="255" x2="1038" y2="335"/>
+  </g>
+  <path d="M790 385 Q850 410 915 382" fill="none" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrow-purple)"/>
+  <text x="850" y="414" text-anchor="middle" class="small">车辆运动方向</text>
+
+  <rect x="680" y="433" width="430" height="55" rx="14" fill="#fff" stroke="#ddd6fe" stroke-width="2"/>
+  <text x="895" y="457" text-anchor="middle" class="label">位姿变换：t₁ / t₂ → 地图坐标系</text>
+  <text x="895" y="479" text-anchor="middle" class="small">利用定位、里程计或配准结果对齐多帧</text>
+  <line x1="895" y1="494" x2="895" y2="522" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrow-purple)"/>
+  <text x="895" y="542" text-anchor="middle" class="label">得到范围更大的累计点云</text>
+
+  <text x="600" y="583" text-anchor="middle" class="sub">共同点：先把各份点云转换到同一个坐标系，再合并</text>
+</svg>
