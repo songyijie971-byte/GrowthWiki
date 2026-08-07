@@ -18,7 +18,7 @@ git status
 git remote -v
 ```
 
-当前目录已经初始化为 Git 仓库，并准备连接 `https://github.com/songyijie971-byte/GrowthWiki.git`。本次覆盖前的远端 `main` 已保存在 `backup-before-obsidian-vault-overwrite-20260807` 分支。
+当前目录已经初始化为 Git 仓库，并已连接 `https://github.com/songyijie971-byte/GrowthWiki.git`。当前 `main` 已同步到 GitHub；覆盖前的远端旧版保存在 `backup-before-obsidian-vault-overwrite-20260807` 分支。
 
 ## 日常同步
 
