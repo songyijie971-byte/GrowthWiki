@@ -1,0 +1,143 @@
+{
+  "sourcePptx": "C:\\Users\\12394\\WPSDrive\\1659757995\\WPS企业云盘\\中国石油大学(北京)\\我的企业文档\\组会ppt\\2026-08-05  宋奕杰.pptx",
+  "workspace": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532",
+  "outDir": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect",
+  "generatedAt": "2026-08-17T08:12:54.386Z",
+  "slideCount": 8,
+  "slideArtifacts": [
+    {
+      "slide": 1,
+      "previewPath": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\source-slides\\source-slide-01.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-01.png",
+      "layoutPath": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\layouts\\source-slide-01.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-01.layout.json"
+    },
+    {
+      "slide": 2,
+      "previewPath": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\source-slides\\source-slide-02.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-02.png",
+      "layoutPath": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\layouts\\source-slide-02.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-02.layout.json"
+    },
+    {
+      "slide": 3,
+      "previewPath": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\source-slides\\source-slide-03.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-03.png",
+      "layoutPath": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\layouts\\source-slide-03.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-03.layout.json"
+    },
+    {
+      "slide": 4,
+      "previewPath": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\source-slides\\source-slide-04.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-04.png",
+      "layoutPath": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\layouts\\source-slide-04.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-04.layout.json"
+    },
+    {
+      "slide": 5,
+      "previewPath": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\source-slides\\source-slide-05.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-05.png",
+      "layoutPath": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\layouts\\source-slide-05.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-05.layout.json"
+    },
+    {
+      "slide": 6,
+      "previewPath": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\source-slides\\source-slide-06.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-06.png",
+      "layoutPath": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\layouts\\source-slide-06.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-06.layout.json"
+    },
+    {
+      "slide": 7,
+      "previewPath": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\source-slides\\source-slide-07.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-07.png",
+      "layoutPath": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\layouts\\source-slide-07.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-07.layout.json"
+    },
+    {
+      "slide": 8,
+      "previewPath": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\source-slides\\source-slide-08.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-08.png",
+      "layoutPath": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\layouts\\source-slide-08.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-08.layout.json"
+    }
+  ],
+  "inspectPath": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\template-inspect.ndjson",
+  "inspectRelativePath": "template-inspect/template-inspect.ndjson",
+  "inspectTruncated": true,
+  "inspectMetadata": {
+    "revision": "f2cu0a",
+    "target": {
+      "id": "pr/e1kmjc"
+    },
+    "kind": {
+      "requested": "slide,textbox,shape,image,table,chart",
+      "tokens": [
+        "slide",
+        "textbox",
+        "shape",
+        "image",
+        "table",
+        "chart"
+      ]
+    },
+    "include": {
+      "tokens": []
+    },
+    "exclude": {
+      "tokens": []
+    },
+    "notices": []
+  },
+  "extractedMedia": [
+    {
+      "entry": "ppt/media/",
+      "path": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\assets\\ppt\\media\\media",
+      "relativePath": "template-inspect/assets/ppt/media/media",
+      "bytes": 0
+    },
+    {
+      "entry": "ppt/media/image1.png",
+      "path": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\assets\\ppt\\media\\image1.png",
+      "relativePath": "template-inspect/assets/ppt/media/image1.png",
+      "bytes": 113740
+    },
+    {
+      "entry": "ppt/media/image2.png",
+      "path": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\assets\\ppt\\media\\image2.png",
+      "relativePath": "template-inspect/assets/ppt/media/image2.png",
+      "bytes": 179646
+    },
+    {
+      "entry": "ppt/media/image3.png",
+      "path": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\assets\\ppt\\media\\image3.png",
+      "relativePath": "template-inspect/assets/ppt/media/image3.png",
+      "bytes": 570879
+    },
+    {
+      "entry": "ppt/media/image4.png",
+      "path": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\assets\\ppt\\media\\image4.png",
+      "relativePath": "template-inspect/assets/ppt/media/image4.png",
+      "bytes": 804949
+    },
+    {
+      "entry": "ppt/media/image5.png",
+      "path": "D:\\Data\\GraduateWorkspace\\01_ObsidianVault\\.codex_ppt_work\\template_audit\\run-authoritative-20260817-161251-532\\template-inspect\\assets\\ppt\\media\\image5.png",
+      "relativePath": "template-inspect/assets/ppt/media/image5.png",
+      "bytes": 129149
+    }
+  ],
+  "fonts": [
+    "+mj-lt",
+    "+mn-lt",
+    "Calibri",
+    "Calibri Light",
+    "微软雅黑"
+  ],
+  "packageParts": {
+    "mediaCount": 6,
+    "slideXmlCount": 8,
+    "chartCount": 0,
+    "tableSlideCount": 0
+  }
+}

@@ -1,0 +1,250 @@
+{"kind":"deck","id":"pr/l7m4xv","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"","type":"master"}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"组会学习汇报 · 2026.08.19","textShapes":10}
+{"kind":"textbox","id":"sh/ipovexwn","slide":1,"name":"矩形 15","text":"组会学习汇报 · 2026.08.19","textPreview":"组会学习汇报 · 2026.08.19","textChars":19,"textLines":1,"bbox":[56,44,420,28]}
+{"kind":"shape","id":"sh/547294r6","slide":1,"name":"矩形 1","bbox":[56,102,150,6]}
+{"kind":"textbox","id":"sh/k3yl0zql","slide":1,"name":"cover-title","text":"Autoware 相机—LiDAR\n投影融合","textPreview":"Autoware 相机—LiDAR | 投影融合","textChars":22,"textLines":2,"bbox":[56,184,760,170]}
+{"kind":"shape","id":"sh/65g3298r","slide":1,"name":"圆角矩形 4","bbox":[856,146,330,354]}
+{"kind":"textbox","id":"sh/ts7md4r2","slide":1,"name":"矩形 5","text":"CAMERA","textPreview":"CAMERA","textChars":6,"textLines":1,"bbox":[892,190,120,30]}
+{"kind":"textbox","id":"sh/sryl4zqx","slide":1,"name":"矩形 6","text":"2D ROI\n类别与语义","textPreview":"2D ROI | 类别与语义","textChars":12,"textLines":2,"bbox":[892,228,150,88]}
+{"kind":"textbox","id":"sh/fu94fe98","slide":1,"name":"矩形 7","text":"+","textPreview":"+","textChars":1,"textLines":1,"bbox":[1038,266,40,44]}
+{"kind":"textbox","id":"sh/utg3698n","slide":1,"name":"矩形 8","text":"LiDAR","textPreview":"LiDAR","textChars":5,"textLines":1,"bbox":[1082,190,90,30]}
+{"kind":"textbox","id":"sh/wn6dc7eh","slide":1,"name":"矩形 9","text":"3D\n位置与形状","textPreview":"3D | 位置与形状","textChars":8,"textLines":2,"bbox":[1056,228,110,88]}
+{"kind":"shape","id":"sh/hofulsf2","slide":1,"name":"矩形 10","bbox":[900,338,240,4]}
+{"kind":"textbox","id":"sh/ul4vaxgb","slide":1,"name":"矩形 11","text":"FUSION","textPreview":"FUSION","textChars":6,"textLines":1,"bbox":[948,360,150,30]}
+{"kind":"textbox","id":"sh/vmdcj2xw","slide":1,"name":"矩形 12","text":"投影并匹配\n同一目标","textPreview":"投影并匹配 | 同一目标","textChars":10,"textLines":2,"bbox":[914,404,220,48]}
+{"kind":"shape","id":"sh/4r6dg7et","slide":1,"name":"圆角矩形 13","bbox":[56,566,722,62]}
+{"kind":"textbox","id":"sh/5sfepcfe","slide":1,"name":"矩形 14","text":"承接 03/04：从接口选择走到空间、时间与 ROI 匹配 · 蓝色 ↗ 可点击","textPreview":"承接 03/04：从接口选择走到空间、时间与 ROI 匹配 · 蓝色 ↗ 可点击","textChars":40,"textLines":1,"bbox":[78,585,680,25]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":"本次汇报承接上一版 LiDAR 输出层级，聚焦一次相机—LiDAR 投影融合怎样发生。当前结论来自官方文档与接口梳理，不代表已经在组内工程或实车上跑通。\n\n[Sources]\n- https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/\n- Local note: 50_智能驾驶/01_基础概念/03_LiDAR 输出与相机融合接口.md\n- Local note: 50_智能驾驶/01_基础概念/04_相机—LiDAR 投影融合.md"}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"FROM TWO BRANCHES","textShapes":15}
+{"kind":"textbox","id":"sh/s72xofmh","slide":2,"name":"slide-2-eyebrow","text":"FROM TWO BRANCHES","textPreview":"FROM TWO BRANCHES","textChars":17,"textLines":1,"bbox":[56,30,600,22]}
+{"kind":"textbox","id":"sh/9072xkry","slide":2,"name":"slide-2-title","text":"融合的是两条感知分支，不是两份原始数据","textPreview":"融合的是两条感知分支，不是两份原始数据","textChars":19,"textLines":1,"bbox":[56,58,1168,64]}
+{"kind":"shape","id":"sh/ozy1ofad","slide":2,"name":"矩形 2","bbox":[56,680,1168,1]}
+{"kind":"textbox","id":"sh/b29kza94","slide":2,"name":"矩形 3","text":"组会学习汇报 · 2026.08.19","textPreview":"组会学习汇报 · 2026.08.19","textChars":19,"textLines":1,"bbox":[56,688,360,18]}
+{"kind":"textbox","id":"sh/a10jqpsj","slide":2,"name":"矩形 4","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1170,686,54,20]}
+{"kind":"textbox","id":"sh/x4r21kru","slide":2,"name":"矩形 5","text":"LiDAR 侧已经形成 3D 结果，相机侧已经形成带类别的 2D ROI。","textPreview":"LiDAR 侧已经形成 3D 结果，相机侧已经形成带类别的 2D ROI。","textChars":37,"textLines":1,"bbox":[56,124,820,34]}
+{"kind":"shape","id":"sh/w3i1sfa9","slide":2,"name":"矩形 6","bbox":[110,214,306,6]}
+{"kind":"textbox","id":"sh/r65knqtk","slide":2,"name":"矩形 7","text":"CAMERA","textPreview":"CAMERA","textChars":6,"textLines":1,"bbox":[110,238,150,28]}
+{"kind":"textbox","id":"sh/q5wjelsz","slide":2,"name":"矩形 8","text":"相机分支：2D ROI","textPreview":"相机分支：2D ROI","textChars":11,"textLines":1,"bbox":[110,282,300,44]}
+{"kind":"textbox","id":"sh/ove9o7yd","slide":2,"name":"矩形 9","text":"图像检测框与类别\n像素坐标中的区域\n还不能直接给出三维位置","textPreview":"图像检测框与类别 | 像素坐标中的区域 | 还不能直接给出三维位置","textChars":29,"textLines":3,"bbox":[110,352,320,142]}
+{"kind":"textbox","id":"sh/9wnqhczy","slide":2,"name":"矩形 10","text":"+","textPreview":"+","textChars":1,"textLines":1,"bbox":[463,338,70,70]}
+{"kind":"shape","id":"sh/mtwrmxg7","slide":2,"name":"矩形 11","bbox":[564,214,306,6]}
+{"kind":"textbox","id":"sh/nu58f2hs","slide":2,"name":"矩形 12","text":"LiDAR","textPreview":"LiDAR","textChars":5,"textLines":1,"bbox":[564,238,150,28]}
+{"kind":"textbox","id":"sh/wjy9sry9","slide":2,"name":"矩形 13","text":"LiDAR 分支：Msg3d","textPreview":"LiDAR 分支：Msg3d","textChars":14,"textLines":1,"bbox":[564,282,350,44]}
+{"kind":"textbox","id":"sh/xk7qlczu","slide":2,"name":"矩形 14","text":"PointCloud2 / 点簇 / 3D 目标\n位置、形状与点云\n类别可能未知或不稳定","textPreview":"PointCloud2 / 点簇 / 3D 目标 | 位置、形状与点云 | 类别可能未知或不稳定","textChars":44,"textLines":3,"bbox":[564,352,340,142]}
+{"kind":"shape","id":"sh/ahwrqhgj","slide":2,"name":"圆角矩形 15","bbox":[958,214,236,280]}
+{"kind":"textbox","id":"sh/bip8jmho","slide":2,"name":"矩形 16","text":"FUSION","textPreview":"FUSION","textChars":6,"textLines":1,"bbox":[986,246,180,30]}
+{"kind":"textbox","id":"sh/cnupgny5","slide":2,"name":"矩形 17","text":"是不是\n同一个目标？","textPreview":"是不是 | 同一个目标？","textChars":10,"textLines":2,"bbox":[982,300,188,110]}
+{"kind":"shape","id":"sh/do3q9szq","slide":2,"name":"圆角矩形 18","bbox":[110,546,1084,64]}
+{"kind":"textbox","id":"sh/t8byxkn2","slide":2,"name":"矩形 19","text":"先建立空间与时间对应，再把相机类别写回 LiDAR 的 3D 结果。","textPreview":"先建立空间与时间对应，再把相机类别写回 LiDAR 的 3D 结果。","textChars":34,"textLines":1,"bbox":[140,563,1024,30]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":"这里先建立统一直觉：Autoware 的投影融合处理的是 LiDAR 侧的 Msg3d 与相机侧的 RoIs。它们都已经是感知分支的结果，并带有各自时间戳。\n\n[Sources]\n- https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/"}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"INTERFACE ROUTING","textShapes":29}
+{"kind":"textbox","id":"sh/qpczuhc7","slide":3,"name":"slide-7-eyebrow","text":"INTERFACE ROUTING","textPreview":"INTERFACE ROUTING","textChars":17,"textLines":1,"bbox":[56,30,600,22]}
+{"kind":"textbox","id":"sh/cza94vmx","slide":3,"name":"slide-7-title","text":"先看 LiDAR 输出层级，再选择融合节点","textPreview":"先看 LiDAR 输出层级，再选择融合节点","textChars":21,"textLines":1,"bbox":[56,58,1168,64]}
+{"kind":"shape","id":"sh/d0jax03i","slide":3,"name":"矩形 2","bbox":[56,680,1168,1]}
+{"kind":"textbox","id":"sh/298ryl4v","slide":3,"name":"矩形 3","text":"组会学习汇报 · 2026.08.19","textPreview":"组会学习汇报 · 2026.08.19","textChars":19,"textLines":1,"bbox":[56,688,360,18]}
+{"kind":"textbox","id":"sh/3ah8rqlg","slide":3,"name":"矩形 4","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1170,686,54,20]}
+{"kind":"shape","id":"sh/obq90bml","slide":3,"name":"矩形 5","bbox":[56,160,8,112]}
+{"kind":"textbox","id":"sh/pcjqtg36","slide":3,"name":"矩形 6","text":"Apollo / 实例点簇","textPreview":"Apollo / 实例点簇","textChars":13,"textLines":1,"bbox":[84,160,368,32]}
+{"kind":"textbox","id":"sh/m5cra54z","slide":3,"name":"矩形 7","text":"输出：DetectedObjectsWithFeature","textPreview":"输出：DetectedObjectsWithFeature","textChars":29,"textLines":1,"bbox":[84,195,368,25]}
+{"kind":"textbox","id":"sh/n6ls3alk","slide":3,"name":"矩形 8","text":"字段：类别 · 置信度 · feature.cluster","textPreview":"字段：类别 · 置信度 · feature.cluster","textChars":29,"textLines":1,"bbox":[84,223,368,22]}
+{"kind":"textbox","id":"sh/n2l4fq98","slide":3,"name":"矩形 9","text":"→  roi_cluster_fusion ↗","textPreview":"→  roi_cluster_fusion ↗","textChars":23,"textLines":1,"bbox":[84,248,368,24]}
+{"kind":"shape","id":"sh/m1c3mlsn","slide":3,"name":"矩形 10","bbox":[56,295,8,112]}
+{"kind":"textbox","id":"sh/943mhgre","slide":3,"name":"矩形 11","text":"CenterPoint / LiDAR TransFusion","textPreview":"CenterPoint / LiDAR TransFusion","textChars":31,"textLines":1,"bbox":[84,295,368,32]}
+{"kind":"textbox","id":"sh/83ulovat","slide":3,"name":"矩形 12","text":"输出：DetectedObjects","textPreview":"输出：DetectedObjects","textChars":18,"textLines":1,"bbox":[84,330,368,25]}
+{"kind":"textbox","id":"sh/v6l4jq94","slide":3,"name":"矩形 13","text":"字段：类别 · 置信度 · 位姿 · 尺寸","textPreview":"字段：类别 · 置信度 · 位姿 · 尺寸","textChars":21,"textLines":1,"bbox":[84,358,368,22]}
+{"kind":"textbox","id":"sh/a5c3ql8z","slide":3,"name":"矩形 14","text":"→  roi_detected_object_fusion ↗","textPreview":"→  roi_detected_object_fusion ↗","textChars":31,"textLines":1,"bbox":[84,383,368,24]}
+{"kind":"shape","id":"sh/x8nml0ra","slide":3,"name":"矩形 15","bbox":[56,430,8,112]}
+{"kind":"textbox","id":"sh/w7ulsvqp","slide":3,"name":"矩形 16","text":"FRNet / 逐点语义","textPreview":"FRNet / 逐点语义","textChars":12,"textLines":1,"bbox":[84,430,368,32]}
+{"kind":"textbox","id":"sh/ja54na9g","slide":3,"name":"矩形 17","text":"输出：PointCloud2","textPreview":"输出：PointCloud2","textChars":14,"textLines":1,"bbox":[84,465,368,25]}
+{"kind":"textbox","id":"sh/i9w3u58v","slide":3,"name":"矩形 18","text":"字段：x/y/z · class_id · probability","textPreview":"字段：x/y/z · class_id · probability","textChars":33,"textLines":1,"bbox":[84,493,368,22]}
+{"kind":"textbox","id":"sh/e10f2twf","slide":3,"name":"矩形 19","text":"→  roi_pointcloud_fusion ↗","textPreview":"→  roi_pointcloud_fusion ↗","textChars":26,"textLines":1,"bbox":[84,518,368,24]}
+{"kind":"shape","id":"sh/03ix43e5","slide":3,"name":"矩形 21","bbox":[74,582,360,34]}
+{"kind":"shape","id":"sh/14ryd8fq","slide":3,"name":"圆角矩形 22","bbox":[486,156,738,410]}
+{"kind":"shape","id":"sh/re9g7yxo","slide":3,"name":"圆角矩形 24","bbox":[728,416,30,30]}
+{"kind":"textbox","id":"sh/sfix03y9","slide":3,"name":"矩形 25","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[728,420,30,22]}
+{"kind":"shape","id":"sh/tgry9ofu","slide":3,"name":"圆角矩形 26","bbox":[816,416,30,30]}
+{"kind":"textbox","id":"sh/a9kfadwn","slide":3,"name":"矩形 27","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[816,420,30,22]}
+{"kind":"shape","id":"sh/batgjixs","slide":3,"name":"圆角矩形 28","bbox":[808,376,30,30]}
+{"kind":"textbox","id":"sh/l4fi9cza","slide":3,"name":"矩形 29","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[808,380,30,22]}
+{"kind":"shape","id":"sh/k3m1g7yp","slide":3,"name":"圆角矩形 30","bbox":[976,470,30,30]}
+{"kind":"textbox","id":"sh/z2d07mh4","slide":3,"name":"矩形 31","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[976,474,30,22]}
+{"kind":"shape","id":"sh/y14jehgj","slide":3,"name":"圆角矩形 32","bbox":[500,574,24,24]}
+{"kind":"textbox","id":"sh/x0vi5czy","slide":3,"name":"矩形 33","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[500,577,24,18]}
+{"kind":"textbox","id":"sh/czmhc7id","slide":3,"name":"矩形 34","text":"CenterPoint / TransFusion → 3D detector","textPreview":"CenterPoint / TransFusion → 3D detector","textChars":39,"textLines":1,"bbox":[532,575,330,22]}
+{"kind":"shape","id":"sh/byd032h8","slide":3,"name":"圆角矩形 35","bbox":[862,574,24,24]}
+{"kind":"textbox","id":"sh/ax4zax0n","slide":3,"name":"矩形 36","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[862,577,24,18]}
+{"kind":"textbox","id":"sh/hwzihwzi","slide":3,"name":"矩形 37","text":"Apollo → LiDAR clustering","textPreview":"Apollo → LiDAR clustering","textChars":25,"textLines":1,"bbox":[894,575,330,22]}
+{"kind":"shape","id":"sh/wv61obyx","slide":3,"name":"圆角矩形 38","bbox":[500,604,24,24]}
+{"kind":"textbox","id":"sh/4nuhs7uh","slide":3,"name":"矩形 39","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[500,607,24,18]}
+{"kind":"textbox","id":"sh/po3ilcvm","slide":3,"name":"矩形 40","text":"FRNet → 语义分割（clustering 前）","textPreview":"FRNet → 语义分割（clustering 前）","textChars":26,"textLines":1,"bbox":[532,605,330,22]}
+{"kind":"shape","id":"sh/21szqxcb","slide":3,"name":"圆角矩形 41","bbox":[862,604,24,24]}
+{"kind":"textbox","id":"sh/32l0j2dw","slide":3,"name":"矩形 42","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[862,607,24,18]}
+{"kind":"textbox","id":"sh/cruhwrud","slide":3,"name":"矩形 43","text":"ROI fusion → Projection fusion","textPreview":"ROI fusion → Projection fusion","textChars":30,"textLines":1,"bbox":[894,605,330,22]}
+{"kind":"textbox","id":"sh/ds3ipcvy","slide":3,"name":"矩形 44","text":"图源：Autoware 官方感知参考架构　↗ 官网文档","textPreview":"图源：Autoware 官方感知参考架构　↗ 官网文档","textChars":27,"textLines":1,"bbox":[500,642,710,24]}
+{"kind":"image","id":"im/czep0bm9","slide":3,"name":"图片 68","geometry":"roundRect","bbox":[631.46,166,447.07,390]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":"这页只做一次承接：选择融合节点时先看 LiDAR 侧对象已经形成到哪一步。实际工程仍要以 launch、remapping 和真实消息类型为准。\n\n[Sources]\n- https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/\n- https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/docs/roi-cluster-fusion/\n- https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/docs/roi-detected-object-fusion/\n- https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/docs/roi-pointcloud-fusion/"}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"STEP 01 · SPATIAL PROJECTION","textShapes":15}
+{"kind":"textbox","id":"sh/3ytsrmpw","slide":4,"name":"slide-5-eyebrow","text":"STEP 01 · SPATIAL PROJECTION","textPreview":"STEP 01 · SPATIAL PROJECTION","textChars":28,"textLines":1,"bbox":[56,30,600,22]}
+{"kind":"textbox","id":"sh/1cj2d8b6","slide":4,"name":"slide-5-title","text":"投影分两步：外参换坐标，内参找像素","textPreview":"投影分两步：外参换坐标，内参找像素","textChars":17,"textLines":1,"bbox":[56,58,1168,64]}
+{"kind":"shape","id":"sh/0ba143al","slide":4,"name":"矩形 2","bbox":[56,680,1168,1]}
+{"kind":"textbox","id":"sh/rm1k7yt4","slide":4,"name":"矩形 3","text":"组会学习汇报 · 2026.08.19","textPreview":"组会学习汇报 · 2026.08.19","textChars":19,"textLines":1,"bbox":[56,688,360,18]}
+{"kind":"textbox","id":"sh/ql8jytsj","slide":4,"name":"矩形 4","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1170,686,54,20]}
+{"kind":"shape","id":"sh/doj29oba","slide":4,"name":"圆角矩形 5","bbox":[56,160,690,360]}
+{"kind":"textbox","id":"sh/3ihk3et8","slide":4,"name":"矩形 7","text":"流程图：根据 Autoware 官方接口文档整理（非官网原图）　↗ 查看依据","textPreview":"流程图：根据 Autoware 官方接口文档整理（非官网原图）　↗ 查看依据","textChars":38,"textLines":1,"bbox":[70,530,662,24]}
+{"kind":"shape","id":"sh/ih8ju9sn","slide":4,"name":"圆角矩形 8","bbox":[56,584,690,54]}
+{"kind":"textbox","id":"sh/kbm987y5","slide":4,"name":"矩形 9","text":"外参决定从哪里看，内参决定落到哪个像素。","textPreview":"外参决定从哪里看，内参决定落到哪个像素。","textChars":20,"textLines":1,"bbox":[78,599,646,25]}
+{"kind":"textbox","id":"sh/5cva1cfq","slide":4,"name":"矩形 10","text":"最小投影算例（教学示例）","textPreview":"最小投影算例（教学示例）","textChars":12,"textLines":1,"bbox":[786,154,330,34]}
+{"kind":"textbox","id":"sh/i94r6xgz","slide":4,"name":"矩形 11","text":"下面数字只用于说明计算，不是实车标定值","textPreview":"下面数字只用于说明计算，不是实车标定值","textChars":19,"textLines":1,"bbox":[786,190,414,42]}
+{"kind":"textbox","id":"sh/jadsz2xk","slide":4,"name":"矩形 12","text":"STEP 1 · TF / 外参","textPreview":"STEP 1 · TF / 外参","textChars":16,"textLines":1,"bbox":[786,242,110,24]}
+{"kind":"textbox","id":"sh/w72947yt","slide":4,"name":"矩形 13","text":"P_C = R · P_L + t","textPreview":"P_C = R · P_L + t","textChars":17,"textLines":1,"bbox":[786,270,410,30]}
+{"kind":"shape","id":"sh/x8vaxsfe","slide":4,"name":"圆角矩形 14","bbox":[786,306,414,98]}
+{"kind":"textbox","id":"sh/a5kr2xg3","slide":4,"name":"矩形 15","text":"假设变换后：\nP_C = (1.0, 0.5, 10.0) m","textPreview":"假设变换后： | P_C = (1.0, 0.5, 10.0) m","textChars":31,"textLines":2,"bbox":[804,318,378,74]}
+{"kind":"textbox","id":"sh/v6tsv2xo","slide":4,"name":"矩形 16","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[950,406,82,28]}
+{"kind":"textbox","id":"sh/g36tgryd","slide":4,"name":"矩形 17","text":"STEP 2 · CameraInfo / 内参 ↗","textPreview":"STEP 2 · CameraInfo / 内参 ↗","textChars":26,"textLines":1,"bbox":[786,440,110,24]}
+{"kind":"textbox","id":"sh/h4fa9wfy","slide":4,"name":"矩形 18","text":"u=fx·X/Z+cx；v=fy·Y/Z+cy","textPreview":"u=fx·X/Z+cx；v=fy·Y/Z+cy","textChars":23,"textLines":1,"bbox":[786,468,414,30]}
+{"kind":"shape","id":"sh/p0batw72","slide":4,"name":"圆角矩形 19","bbox":[786,504,414,128]}
+{"kind":"textbox","id":"sh/oz29krqh","slide":4,"name":"矩形 20","text":"fx=fy=800，cx=640，cy=360\n→ 像素 (u,v)=(720,400)","textPreview":"fx=fy=800，cx=640，cy=360 | → 像素 (u,v)=(720,400)","textChars":44,"textLines":2,"bbox":[804,516,378,104]}
+{"kind":"image","id":"im/94jq9oju","slide":4,"name":"图片 27","geometry":"roundRect","bbox":[66,170,670,335]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":"教学算例先假设 TF 已把 LiDAR 点变换到相机坐标系 P_C=(1.0,0.5,10.0)m，再用 CameraInfo 中的内参计算像素。数值只帮助理解消息和公式，不是设备标定结果。左图为本地中文整理图，不是官网原图。\n\n[Sources]\n- https://github.com/ros2/common_interfaces/blob/humble/sensor_msgs/msg/CameraInfo.msg\n- https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/\n- Local note: 50_智能驾驶/01_基础概念/04_相机—LiDAR 投影融合.md"}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"STEP 02 · ROI MATCHING","textShapes":14}
+{"kind":"textbox","id":"sh/fe94nm1w","slide":5,"name":"slide-4-eyebrow","text":"STEP 02 · ROI MATCHING","textPreview":"STEP 02 · ROI MATCHING","textChars":22,"textLines":1,"bbox":[64,30,600,22]}
+{"kind":"textbox","id":"sh/dgbulwnm","slide":5,"name":"slide-4-title","text":"匹配看重叠：投影区域与相机 ROI 是否对应","textPreview":"匹配看重叠：投影区域与相机 ROI 是否对应","textChars":22,"textLines":1,"bbox":[56,58,1168,64]}
+{"kind":"shape","id":"sh/cf2tcr61","slide":5,"name":"矩形 2","bbox":[56,680,1168,1]}
+{"kind":"textbox","id":"sh/z2tcnm5s","slide":5,"name":"矩形 3","text":"组会学习汇报 · 2026.08.19","textPreview":"组会学习汇报 · 2026.08.19","textChars":19,"textLines":1,"bbox":[56,688,360,18]}
+{"kind":"textbox","id":"sh/yhkbe1o7","slide":5,"name":"矩形 4","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1170,686,54,20]}
+{"kind":"shape","id":"sh/l4bupwny","slide":5,"name":"圆角矩形 5","bbox":[56,160,690,360]}
+{"kind":"shape","id":"sh/m5kbi1oj","slide":5,"name":"圆角矩形 8","bbox":[56,584,690,54]}
+{"kind":"textbox","id":"sh/w32dkbuh","slide":5,"name":"矩形 9","text":"官方示意图：匹配成功后，才用相机类别更新 3D 点簇标签。　↗ 官网","textPreview":"官方示意图：匹配成功后，才用相机类别更新 3D 点簇标签。　↗ 官网","textChars":34,"textLines":1,"bbox":[78,599,646,25]}
+{"kind":"textbox","id":"sh/x4vedgvm","slide":5,"name":"矩形 10","text":"roi_cluster_fusion 做什么","textPreview":"roi_cluster_fusion 做什么","textChars":22,"textLines":1,"bbox":[786,154,330,34]}
+{"kind":"textbox","id":"sh/ahkvi1cb","slide":5,"name":"矩形 11","text":"输入已经是 DetectedObjectsWithFeature 点簇","textPreview":"输入已经是 DetectedObjectsWithFeature 点簇","textChars":35,"textLines":1,"bbox":[786,190,414,42]}
+{"kind":"textbox","id":"sh/v2twb6dw","slide":5,"name":"矩形 12","text":"MATCH","textPreview":"MATCH","textChars":5,"textLines":1,"bbox":[786,242,110,24]}
+{"kind":"textbox","id":"sh/k7mxovud","slide":5,"name":"矩形 13","text":"投影框 ↔ Camera ROI","textPreview":"投影框 ↔ Camera ROI","textChars":16,"textLines":1,"bbox":[786,270,410,30]}
+{"kind":"shape","id":"sh/58vehgvy","slide":5,"name":"圆角矩形 14","bbox":[786,306,414,98]}
+{"kind":"textbox","id":"sh/i54fmlc7","slide":5,"name":"矩形 15","text":"iou_x / iou_y\nroi_scale_factor · only_allow_inside_cluster","textPreview":"iou_x / iou_y | roi_scale_factor · only_allow_inside_cluster","textChars":58,"textLines":2,"bbox":[804,318,378,74]}
+{"kind":"textbox","id":"sh/j6dwfqds","slide":5,"name":"矩形 16","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[950,406,82,28]}
+{"kind":"textbox","id":"sh/sb6xsvu9","slide":5,"name":"矩形 17","text":"MATCHED OUTPUT","textPreview":"MATCHED OUTPUT","textChars":14,"textLines":1,"bbox":[786,440,110,24]}
+{"kind":"textbox","id":"sh/tcfel0vu","slide":5,"name":"矩形 18","text":"保留 3D 点簇","textPreview":"保留 3D 点簇","textChars":8,"textLines":1,"bbox":[786,468,414,30]}
+{"kind":"shape","id":"sh/hgrmpwj2","slide":5,"name":"圆角矩形 19","bbox":[786,504,414,128]}
+{"kind":"textbox","id":"sh/gfi5grih","slide":5,"name":"矩形 20","text":"相机 ROI：CAR\n→ 更新 cluster 的分类标签\n位置与形状仍来自 LiDAR","textPreview":"相机 ROI：CAR | → 更新 cluster 的分类标签 | 位置与形状仍来自 LiDAR","textChars":44,"textLines":3,"bbox":[804,516,378,104]}
+{"kind":"image","id":"im/lgbydg7i","slide":5,"name":"图片 27","geometry":"roundRect","bbox":[136.43,170,529.13,340]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":"roi_cluster_fusion 把点簇投到图像，与相机检测 ROI 比较重叠，再用匹配到的 ROI 类别更新点簇标签。页面参数只用于说明应该在代码和配置中搜索什么，不代表当前工程取值。\n\n[Sources]\n- https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/docs/roi-cluster-fusion/\n- Figure reproduced from https://raw.githubusercontent.com/autowarefoundation/autoware_universe/main/perception/autoware_image_projection_based_fusion/docs/images/roi_cluster_fusion.png"}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"STEP 02 · ROI CLUSTER FUSION","textShapes":17}
+{"kind":"textbox","id":"sh/0r2t8vyx","slide":6,"name":"slide-7-eyebrow","text":"STEP 02 · ROI CLUSTER FUSION","textPreview":"STEP 02 · ROI CLUSTER FUSION","textChars":28,"textLines":1,"bbox":[56,30,600,22]}
+{"kind":"textbox","id":"sh/yhg7epsj","slide":6,"name":"slide-7-title","text":"roi_cluster_fusion：投影、匹配、更新标签","textPreview":"roi_cluster_fusion：投影、匹配、更新标签","textChars":29,"textLines":1,"bbox":[56,58,1168,64]}
+{"kind":"shape","id":"sh/zi98nu94","slide":6,"name":"矩形 2","bbox":[56,680,1168,1]}
+{"kind":"textbox","id":"sh/87ipkzal","slide":6,"name":"矩形 3","text":"组会学习汇报 · 2026.08.19","textPreview":"组会学习汇报 · 2026.08.19","textChars":19,"textLines":1,"bbox":[56,688,360,18]}
+{"kind":"textbox","id":"sh/98rqt4r6","slide":6,"name":"矩形 4","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1170,686,54,20]}
+{"kind":"shape","id":"sh/ml07i9sv","slide":6,"name":"矩形 5","bbox":[56,160,8,112]}
+{"kind":"textbox","id":"sh/7m98ru9g","slide":6,"name":"矩形 6","text":"PRE-PROCESS","textPreview":"PRE-PROCESS","textChars":11,"textLines":1,"bbox":[84,160,368,32]}
+{"kind":"textbox","id":"sh/oryp8fah","slide":6,"name":"矩形 7","text":"点簇变换到相机坐标","textPreview":"点簇变换到相机坐标","textChars":9,"textLines":1,"bbox":[84,195,368,25]}
+{"kind":"textbox","id":"sh/pc76hkr2","slide":6,"name":"矩形 8","text":"投影得到 2D 区域","textPreview":"投影得到 2D 区域","textChars":10,"textLines":1,"bbox":[84,223,368,22]}
+{"kind":"textbox","id":"sh/h4bupgn6","slide":6,"name":"矩形 9","text":"→  准备匹配","textPreview":"→  准备匹配","textChars":7,"textLines":1,"bbox":[84,248,368,24]}
+{"kind":"shape","id":"sh/w32twb6l","slide":6,"name":"矩形 10","bbox":[56,295,8,112]}
+{"kind":"textbox","id":"sh/v2tcn650","slide":6,"name":"矩形 11","text":"FUSION PROCESS","textPreview":"FUSION PROCESS","textChars":14,"textLines":1,"bbox":[84,295,368,32]}
+{"kind":"textbox","id":"sh/u1kbu1ov","slide":6,"name":"矩形 12","text":"比较 ROI 与投影区域","textPreview":"比较 ROI 与投影区域","textChars":12,"textLines":1,"bbox":[84,330,368,25]}
+{"kind":"textbox","id":"sh/5svutgni","slide":6,"name":"矩形 13","text":"IoU / 阈值过滤","textPreview":"IoU / 阈值过滤","textChars":10,"textLines":1,"bbox":[84,358,368,22]}
+{"kind":"textbox","id":"sh/47mt0b6x","slide":6,"name":"矩形 14","text":"→  选择匹配标签","textPreview":"→  选择匹配标签","textChars":9,"textLines":1,"bbox":[84,383,368,24]}
+{"kind":"shape","id":"sh/j6dcr65c","slide":6,"name":"矩形 15","bbox":[56,430,8,112]}
+{"kind":"textbox","id":"sh/i54bylor","slide":6,"name":"矩形 16","text":"POST-PROCESS","textPreview":"POST-PROCESS","textChars":12,"textLines":1,"bbox":[84,430,368,32]}
+{"kind":"textbox","id":"sh/twfux0ne","slide":6,"name":"矩形 17","text":"处理 UNKNOWN 与重叠","textPreview":"处理 UNKNOWN 与重叠","textChars":14,"textLines":1,"bbox":[84,465,368,25]}
+{"kind":"textbox","id":"sh/svmt4v6t","slide":6,"name":"矩形 18","text":"保留 LiDAR 的 3D 结构","textPreview":"保留 LiDAR 的 3D 结构","textChars":16,"textLines":1,"bbox":[84,493,368,22]}
+{"kind":"textbox","id":"sh/cbe5g3ih","slide":6,"name":"矩形 19","text":"→  输出融合点簇","textPreview":"→  输出融合点簇","textChars":9,"textLines":1,"bbox":[84,518,368,24]}
+{"kind":"shape","id":"sh/bq547yhw","slide":6,"name":"圆角矩形 22","bbox":[486,156,738,410]}
+{"kind":"textbox","id":"sh/fq9cfqxc","slide":6,"name":"矩形 44","text":"图源：Autoware Universe 官方文档 · roi_cluster_fusion pipeline　↗ 官网","textPreview":"图源：Autoware Universe 官方文档 · roi_cluster_fusion pipeline　↗ 官网","textChars":60,"textLines":1,"bbox":[500,642,710,24]}
+{"kind":"image","id":"im/mlw3etoz","slide":6,"name":"图片 68","geometry":"roundRect","bbox":[522.75,166,664.5,390]}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":"官方流程图把 roi_cluster_fusion 拆成预处理、融合和后处理。汇报时只抓住三件事：先投影，再匹配，最后更新标签并输出仍带点簇的 3D 结果。\n\n[Sources]\n- https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/docs/roi-cluster-fusion/\n- Figure reproduced from https://raw.githubusercontent.com/autowarefoundation/autoware_universe/main/perception/autoware_image_projection_based_fusion/docs/images/roi_cluster_fusion_pipeline.svg"}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"空间对齐还不够：ROI 与 Msg3d 必须来自相近时刻","textShapes":11}
+{"kind":"textbox","id":"sh/f2d0b6lc","slide":7,"name":"slide-6-title","text":"空间对齐还不够：ROI 与 Msg3d 必须来自相近时刻","textPreview":"空间对齐还不够：ROI 与 Msg3d 必须来自相近时刻","textChars":28,"textLines":1,"bbox":[56,58,1168,64]}
+{"kind":"shape","id":"sh/cb2tkvap","slide":7,"name":"矩形 1","bbox":[56,680,1168,1]}
+{"kind":"textbox","id":"sh/dcbud0ra","slide":7,"name":"矩形 2","text":"组会学习汇报 · 2026.08.19","textPreview":"组会学习汇报 · 2026.08.19","textChars":19,"textLines":1,"bbox":[56,688,360,18]}
+{"kind":"textbox","id":"sh/ydkbm5sv","slide":7,"name":"矩形 3","text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1170,686,54,20]}
+{"kind":"shape","id":"sh/zedcfa9g","slide":7,"name":"圆角矩形 4","bbox":[56,160,690,360]}
+{"kind":"textbox","id":"sh/l0vuh0rm","slide":7,"name":"矩形 6","text":"图源：Autoware Universe 官方文档 · lidar_camera_sync.svg　↗ 官网","textPreview":"图源：Autoware Universe 官方文档 · lidar_camera_sync.svg　↗ 官网","textChars":54,"textLines":1,"bbox":[70,530,662,24]}
+{"kind":"shape","id":"sh/eh0ba1sr","slide":7,"name":"圆角矩形 7","bbox":[56,584,690,54]}
+{"kind":"textbox","id":"sh/fi9c369c","slide":7,"name":"矩形 8","text":"目标在运动，时间差会把正确投影变成错位。","textPreview":"目标在运动，时间差会把正确投影变成错位。","textChars":20,"textLines":1,"bbox":[78,599,646,25]}
+{"kind":"textbox","id":"sh/baxkjqlk","slide":7,"name":"矩形 9","text":"时间偏移怎么处理","textPreview":"时间偏移怎么处理","textChars":8,"textLines":1,"bbox":[786,154,330,34]}
+{"kind":"textbox","id":"sh/a9ojq5kz","slide":7,"name":"矩形 10","text":"每个相机快门时刻都可能与 LiDAR header 不同","textPreview":"每个相机快门时刻都可能与 LiDAR header 不同","textChars":28,"textLines":1,"bbox":[786,190,414,42]}
+{"kind":"shape","id":"sh/xcz2l03q","slide":7,"name":"圆角矩形 11","bbox":[786,246,414,150]}
+{"kind":"textbox","id":"sh/cbq1sv25","slide":7,"name":"矩形 12","text":"rois_timestamp_offsets\n补偿 Camera header 与 LiDAR header 的时间差","textPreview":"rois_timestamp_offsets | 补偿 Camera header 与 LiDAR header 的时间差","textChars":59,"textLines":2,"bbox":[806,262,374,118]}
+{"kind":"textbox","id":"sh/n6x0fqlo","slide":7,"name":"矩形 13","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[950,406,82,28]}
+{"kind":"shape","id":"sh/25ojml43","slide":7,"name":"圆角矩形 14","bbox":[786,448,414,184]}
+{"kind":"textbox","id":"sh/p8fih03e","slide":7,"name":"矩形 15","text":"matching_strategy.threshold\n只在允许时间窗口内匹配\n\nrois_timeout_sec / msg3d_timeout_sec\n输入不齐时触发等待或超时策略","textPreview":"matching_strategy.threshold | 只在允许时间窗口内匹配 |  | rois_timeout_sec / msg3d_timeout_sec | 输入不齐时触发等待或超时策略","textChars":92,"textLines":5,"bbox":[806,462,374,154]}
+{"kind":"textbox","id":"sh/o761ov2t","slide":7,"name":"矩形 16","text":"STEP 03 · TIME ALIGNMENT","textPreview":"STEP 03 · TIME ALIGNMENT","textChars":24,"textLines":1,"bbox":[64,30,600,22]}
+{"kind":"image","id":"im/tsze1szm","slide":7,"name":"图片 22","geometry":"roundRect","bbox":[223.05,170,353.91,340]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":"即使外参和内参正确，运动目标仍会因为传感器时刻不同而错位。Autoware 用每路 rois_timestamp_offsets、匹配时间窗口和超时参数把 RoIs 与 Msg3d 对齐到相近参考时刻。\n\n[Sources]\n- https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/#parameter-settings\n- Figure reproduced from https://raw.githubusercontent.com/autowarefoundation/autoware_universe/main/perception/autoware_image_projection_based_fusion/docs/images/lidar_camera_sync.svg"}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"STEP 04 · MESSAGE COLLECTION","textShapes":17}
+{"kind":"textbox","id":"sh/hsjqd47y","slide":8,"name":"slide-7-eyebrow","text":"STEP 04 · MESSAGE COLLECTION","textPreview":"STEP 04 · MESSAGE COLLECTION","textChars":28,"textLines":1,"bbox":[56,30,600,22]}
+{"kind":"textbox","id":"sh/18byd4zy","slide":8,"name":"slide-7-title","text":"Collector 先对齐时间，再触发一次融合","textPreview":"Collector 先对齐时间，再触发一次融合","textChars":23,"textLines":1,"bbox":[56,58,1168,64]}
+{"kind":"shape","id":"sh/g72x4zyd","slide":8,"name":"矩形 2","bbox":[56,680,1168,1]}
+{"kind":"textbox","id":"sh/ri9g7uhw","slide":8,"name":"矩形 3","text":"组会学习汇报 · 2026.08.19","textPreview":"组会学习汇报 · 2026.08.19","textChars":19,"textLines":1,"bbox":[56,688,360,18]}
+{"kind":"textbox","id":"sh/6h0fypgb","slide":8,"name":"矩形 4","text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1170,686,54,20]}
+{"kind":"shape","id":"sh/tkby9kzm","slide":8,"name":"矩形 5","bbox":[56,160,8,112]}
+{"kind":"textbox","id":"sh/sjix0zy1","slide":8,"name":"矩形 6","text":"REFERENCE TIME","textPreview":"REFERENCE TIME","textChars":14,"textLines":1,"bbox":[84,160,368,32]}
+{"kind":"textbox","id":"sh/je9g3ahk","slide":8,"name":"矩形 7","text":"Msg3d 或 ROI 到达","textPreview":"Msg3d 或 ROI 到达","textChars":14,"textLines":1,"bbox":[84,195,368,25]}
+{"kind":"textbox","id":"sh/id0fu50z","slide":8,"name":"矩形 8","text":"先减去配置的 offset","textPreview":"先减去配置的 offset","textChars":13,"textLines":1,"bbox":[84,223,368,22]}
+{"kind":"textbox","id":"sh/o7ydoret","slide":8,"name":"矩形 9","text":"→  得到 reference timestamp","textPreview":"→  得到 reference timestamp","textChars":25,"textLines":1,"bbox":[84,248,368,24]}
+{"kind":"shape","id":"sh/98rehwve","slide":8,"name":"矩形 10","bbox":[56,295,8,112]}
+{"kind":"textbox","id":"sh/m5gvmhwn","slide":8,"name":"矩形 11","text":"COLLECTOR","textPreview":"COLLECTOR","textChars":9,"textLines":1,"bbox":[84,295,368,32]}
+{"kind":"textbox","id":"sh/n6pwfmd8","slide":8,"name":"矩形 12","text":"查找同一参考时刻的容器","textPreview":"查找同一参考时刻的容器","textChars":11,"textLines":1,"bbox":[84,330,368,25]}
+{"kind":"textbox","id":"sh/0jydkreh","slide":8,"name":"矩形 13","text":"没有就创建并启动 timer","textPreview":"没有就创建并启动 timer","textChars":14,"textLines":1,"bbox":[84,358,368,22]}
+{"kind":"textbox","id":"sh/1k7edwv2","slide":8,"name":"矩形 14","text":"→  收集多相机 ROI + 3D","textPreview":"→  收集多相机 ROI + 3D","textChars":17,"textLines":1,"bbox":[84,383,368,24]}
+{"kind":"shape","id":"sh/ehgvihwr","slide":8,"name":"矩形 15","bbox":[56,430,8,112]}
+{"kind":"textbox","id":"sh/zipwbmdc","slide":8,"name":"矩形 16","text":"FUSE / TIMEOUT","textPreview":"FUSE / TIMEOUT","textChars":14,"textLines":1,"bbox":[84,430,368,32]}
+{"kind":"textbox","id":"sh/kfixwbe1","slide":8,"name":"矩形 17","text":"数据齐全就执行融合","textPreview":"数据齐全就执行融合","textChars":9,"textLines":1,"bbox":[84,465,368,25]}
+{"kind":"textbox","id":"sh/lgbepgvm","slide":8,"name":"矩形 18","text":"超时仍缺 Msg3d 则丢弃","textPreview":"超时仍缺 Msg3d 则丢弃","textChars":14,"textLines":1,"bbox":[84,493,368,22]}
+{"kind":"textbox","id":"sh/tw7e9gnq","slide":8,"name":"矩形 19","text":"→  发布结果并回到 idle","textPreview":"→  发布结果并回到 idle","textChars":15,"textLines":1,"bbox":[84,518,368,24]}
+{"kind":"shape","id":"sh/6twve1oz","slide":8,"name":"圆角矩形 22","bbox":[486,156,738,410]}
+{"kind":"textbox","id":"sh/up872987","slide":8,"name":"矩形 44","text":"图源：Autoware Universe 官方文档 · fusion_algorithm　↗ 官网","textPreview":"图源：Autoware Universe 官方文档 · fusion_algorithm　↗ 官网","textChars":49,"textLines":1,"bbox":[500,642,710,24]}
+{"kind":"image","id":"im/vqd4ja5w","slide":8,"name":"图片 68","geometry":"roundRect","bbox":[519.82,166,670.36,390]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":"Collector 以修正后的 reference timestamp 为键收集 Msg3d 与多路相机 RoIs。数据齐全时融合；定时器到期时按现有数据和 Msg3d 是否存在决定融合或丢弃。\n\n[Sources]\n- https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/#inner-workings-algorithms\n- Figure reproduced from https://raw.githubusercontent.com/autowarefoundation/autoware_universe/main/perception/autoware_image_projection_based_fusion/docs/images/fusion_algorithm.drawio.svg"}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"END-TO-END EXAMPLE","textShapes":15}
+{"kind":"textbox","id":"sh/87a18zqt","slide":9,"name":"slide-2-eyebrow","text":"END-TO-END EXAMPLE","textPreview":"END-TO-END EXAMPLE","textChars":18,"textLines":1,"bbox":[56,30,600,22]}
+{"kind":"textbox","id":"sh/1cfmhgne","slide":9,"name":"slide-2-title","text":"一辆车融合后：三维几何保留，类别被补全","textPreview":"一辆车融合后：三维几何保留，类别被补全","textChars":19,"textLines":1,"bbox":[56,58,1168,64]}
+{"kind":"shape","id":"sh/0b65obm9","slide":9,"name":"矩形 2","bbox":[56,680,1168,1]}
+{"kind":"textbox","id":"sh/nex4jq5k","slide":9,"name":"矩形 3","text":"组会学习汇报 · 2026.08.19","textPreview":"组会学习汇报 · 2026.08.19","textChars":19,"textLines":1,"bbox":[56,688,360,18]}
+{"kind":"textbox","id":"sh/mdonql4z","slide":9,"name":"矩形 4","text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1170,686,54,20]}
+{"kind":"textbox","id":"sh/9gzml0nq","slide":9,"name":"矩形 5","text":"以下数值只用于说明信息怎样流动，不是实测输出。","textPreview":"以下数值只用于说明信息怎样流动，不是实测输出。","textChars":23,"textLines":1,"bbox":[56,124,820,34]}
+{"kind":"shape","id":"sh/ofq5svm5","slide":9,"name":"矩形 6","bbox":[110,214,306,6]}
+{"kind":"textbox","id":"sh/bih4na5w","slide":9,"name":"矩形 7","text":"CAMERA","textPreview":"CAMERA","textChars":6,"textLines":1,"bbox":[110,238,150,28]}
+{"kind":"textbox","id":"sh/ah8nu54b","slide":9,"name":"矩形 8","text":"相机：图像 ROI","textPreview":"相机：图像 ROI","textChars":9,"textLines":1,"bbox":[110,282,300,44]}
+{"kind":"textbox","id":"sh/oza1gfyh","slide":9,"name":"矩形 9","text":"ROI=(620,300,180,120)\nclassification=car\n只知道像素区域与类别","textPreview":"ROI=(620,300,180,120) | classification=car | 只知道像素区域与类别","textChars":51,"textLines":3,"bbox":[110,352,320,142]}
+{"kind":"textbox","id":"sh/p0ji9kf2","slide":9,"name":"矩形 10","text":"+","textPreview":"+","textChars":1,"textLines":1,"bbox":[463,338,70,70]}
+{"kind":"shape","id":"sh/2xsjepgb","slide":9,"name":"矩形 11","bbox":[564,214,306,6]}
+{"kind":"textbox","id":"sh/3y107axw","slide":9,"name":"矩形 12","text":"LiDAR","textPreview":"LiDAR","textChars":5,"textLines":1,"bbox":[564,238,150,28]}
+{"kind":"textbox","id":"sh/cnu1kzyd","slide":9,"name":"矩形 13","text":"LiDAR：3D 目标","textPreview":"LiDAR：3D 目标","textChars":11,"textLines":1,"bbox":[564,282,350,44]}
+{"kind":"textbox","id":"sh/do3id4fy","slide":9,"name":"矩形 14","text":"pos≈(12.0,1.5,0.0)m\nshape≈(4.5,1.8,1.6)m\n类别可能 UNKNOWN","textPreview":"pos≈(12.0,1.5,0.0)m | shape≈(4.5,1.8,1.6)m | 类别可能 UNKNOWN","textChars":53,"textLines":3,"bbox":[564,352,340,142]}
+{"kind":"shape","id":"sh/qlcjipgn","slide":9,"name":"圆角矩形 15","bbox":[958,214,236,280]}
+{"kind":"textbox","id":"sh/bml0buxs","slide":9,"name":"矩形 16","text":"MATCH","textPreview":"MATCH","textChars":5,"textLines":1,"bbox":[986,246,180,30]}
+{"kind":"textbox","id":"sh/0ru1ozyp","slide":9,"name":"矩形 17","text":"TF + K\n+ IoU","textPreview":"TF + K | + IoU","textChars":12,"textLines":2,"bbox":[982,300,188,110]}
+{"kind":"shape","id":"sh/lsn2h4fa","slide":9,"name":"圆角矩形 18","bbox":[110,546,1084,64]}
+{"kind":"textbox","id":"sh/98ji147e","slide":9,"name":"矩形 19","text":"融合输出：前方约 12 m 处有一辆 car；位置和形状仍来自 LiDAR。","textPreview":"融合输出：前方约 12 m 处有一辆 car；位置和形状仍来自 LiDAR。","textChars":38,"textLines":1,"bbox":[140,563,1024,30]}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":"这个例子把整条链串起来：LiDAR 给三维位置和形状，相机给 car 类别；经过 TF、CameraInfo 投影和 IoU 匹配后，融合结果仍是 3D 目标，只是类别被补全。所有数字都是解释性示例。\n\n[Sources]\n- https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/\n- Local note: 50_智能驾驶/01_基础概念/04_相机—LiDAR 投影融合.md"}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"CURRENT STATE → NEXT EVIDENCE","textShapes":21}
+{"kind":"textbox","id":"sh/1o3ahwvq","slide":10,"name":"slide-11-eyebrow","text":"CURRENT STATE → NEXT EVIDENCE","textPreview":"CURRENT STATE → NEXT EVIDENCE","textChars":29,"textLines":1,"bbox":[56,30,600,22]}
+{"kind":"textbox","id":"sh/xc3mho32","slide":10,"name":"slide-11-title","text":"流程已经按官网梳理，实机融合仍待验证","textPreview":"流程已经按官网梳理，实机融合仍待验证","textChars":18,"textLines":1,"bbox":[56,58,1168,64]}
+{"kind":"shape","id":"sh/cbu58j2h","slide":10,"name":"矩形 2","bbox":[56,680,1168,1]}
+{"kind":"textbox","id":"sh/zelojyl8","slide":10,"name":"矩形 3","text":"组会学习汇报 · 2026.08.19","textPreview":"组会学习汇报 · 2026.08.19","textChars":19,"textLines":1,"bbox":[56,688,360,18]}
+{"kind":"textbox","id":"sh/ydcnatkn","slide":10,"name":"矩形 4","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1170,686,54,20]}
+{"kind":"textbox","id":"sh/l036l83y","slide":10,"name":"矩形 5","text":"已完成","textPreview":"已完成","textChars":3,"textLines":1,"bbox":[76,168,200,36]}
+{"kind":"shape","id":"sh/kzu5c32t","slide":10,"name":"矩形 6","bbox":[76,216,490,5]}
+{"kind":"textbox","id":"sh/725onyl4","slide":10,"name":"矩形 7","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[82,252,34,34]}
+{"kind":"textbox","id":"sh/m1cnetkj","slide":10,"name":"矩形 8","text":"消息层级与三个 roi_* 节点","textPreview":"消息层级与三个 roi_* 节点","textChars":16,"textLines":1,"bbox":[132,252,420,34]}
+{"kind":"textbox","id":"sh/s7yt4b21","slide":10,"name":"矩形 9","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[82,320,34,34]}
+{"kind":"textbox","id":"sh/d87uxg3m","slide":10,"name":"矩形 10","text":"外参 / CameraInfo 的投影关系","textPreview":"外参 / CameraInfo 的投影关系","textChars":21,"textLines":1,"bbox":[132,320,420,34]}
+{"kind":"textbox","id":"sh/q5gb21kb","slide":10,"name":"矩形 11","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[82,388,34,34]}
+{"kind":"textbox","id":"sh/r6pcv6lw","slide":10,"name":"矩形 12","text":"ROI 匹配与 Collector 时间逻辑","textPreview":"ROI 匹配与 Collector 时间逻辑","textChars":22,"textLines":1,"bbox":[132,388,420,34]}
+{"kind":"textbox","id":"sh/e9gb61k7","slide":10,"name":"矩形 15","text":"待验证","textPreview":"待验证","textChars":3,"textLines":1,"bbox":[682,168,200,36]}
+{"kind":"shape","id":"sh/fapcz6ls","slide":10,"name":"矩形 16","bbox":[682,216,522,5]}
+{"kind":"textbox","id":"sh/ozitcv29","slide":10,"name":"矩形 17","text":"○","textPreview":"○","textChars":1,"textLines":1,"bbox":[686,252,34,34]}
+{"kind":"textbox","id":"sh/p0ru503u","slide":10,"name":"矩形 18","text":"实际 Topic、launch 与 remapping","textPreview":"实际 Topic、launch 与 remapping","textChars":27,"textLines":1,"bbox":[736,252,444,34]}
+{"kind":"textbox","id":"sh/xwnupgvy","slide":10,"name":"矩形 19","text":"○","textPreview":"○","textChars":1,"textLines":1,"bbox":[686,320,34,34]}
+{"kind":"textbox","id":"sh/wvetgbud","slide":10,"name":"矩形 20","text":"TF / CameraInfo 是否齐全","textPreview":"TF / CameraInfo 是否齐全","textChars":20,"textLines":1,"bbox":[736,320,444,34]}
+{"kind":"textbox","id":"sh/bu5cnqd8","slide":10,"name":"矩形 21","text":"○","textPreview":"○","textChars":1,"textLines":1,"bbox":[686,388,34,34]}
+{"kind":"textbox","id":"sh/atwbelcn","slide":10,"name":"矩形 22","text":"header 时间与 timestamp offset","textPreview":"header 时间与 timestamp offset","textChars":27,"textLines":1,"bbox":[736,388,444,34]}
+{"kind":"textbox","id":"sh/lk7ut0va","slide":10,"name":"矩形 23","text":"○","textPreview":"○","textChars":1,"textLines":1,"bbox":[686,456,34,34]}
+{"kind":"textbox","id":"sh/kjytkvup","slide":10,"name":"矩形 24","text":"debug 图像和 /diagnostics","textPreview":"debug 图像和 /diagnostics","textChars":22,"textLines":1,"bbox":[736,456,444,34]}
+{"kind":"shape","id":"sh/jypcrqd4","slide":10,"name":"圆角矩形 25","bbox":[56,566,1168,76]}
+{"kind":"textbox","id":"sh/yxgbilcj","slide":10,"name":"矩形 26","text":"先验证 TF、CameraInfo 与时间戳，再讨论融合效果。","textPreview":"先验证 TF、CameraInfo 与时间戳，再讨论融合效果。","textChars":31,"textLines":1,"bbox":[88,584,1104,42]}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":"结尾明确边界：已经完成的是官方流程和接口理解；未完成的是组内工程与实机验证。下一步应拿到真实 launch 或 rosbag，依次核对 Topic 类型、TF、CameraInfo、header 时间、offset、debug 图像和 diagnostics。\n\n[Sources]\n- https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/\n- https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/docs/roi-cluster-fusion/"}

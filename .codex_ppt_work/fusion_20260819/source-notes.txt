@@ -1,0 +1,18 @@
+Primary official documentation:
+- https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/
+- https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/docs/roi-cluster-fusion/
+- https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/docs/roi-detected-object-fusion/
+- https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/docs/roi-pointcloud-fusion/
+- https://github.com/ros2/common_interfaces/blob/humble/sensor_msgs/msg/CameraInfo.msg
+
+Official figure assets:
+- https://raw.githubusercontent.com/autowarefoundation/autoware_universe/main/perception/autoware_image_projection_based_fusion/docs/images/roi_cluster_fusion.png
+- https://raw.githubusercontent.com/autowarefoundation/autoware_universe/main/perception/autoware_image_projection_based_fusion/docs/images/roi_cluster_fusion_pipeline.svg
+- https://raw.githubusercontent.com/autowarefoundation/autoware_universe/main/perception/autoware_image_projection_based_fusion/docs/images/lidar_camera_sync.svg
+- https://raw.githubusercontent.com/autowarefoundation/autoware_universe/main/perception/autoware_image_projection_based_fusion/docs/images/fusion_algorithm.drawio.svg
+
+Local source notes:
+- 50_智能驾驶/01_基础概念/03_LiDAR 输出与相机融合接口.md
+- 50_智能驾驶/01_基础概念/04_相机—LiDAR 投影融合.md
+
+Verification boundary: the deck reports documentation-based understanding only. Topic remapping, TF, CameraInfo, timestamp offsets, rosbag flow, diagnostics, and real fusion output remain unverified on the user's system.

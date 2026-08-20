@@ -1,0 +1,106 @@
+{"kind":"textbox","id":"sh/ipovexwn","slide":1,"name":"矩形 15","text":"组会学习汇报 · 2026.08.05","textPreview":"组会学习汇报 · 2026.08.05","textChars":19,"textLines":1,"bbox":[56,44,420,28]}
+{"kind":"textbox","id":"sh/k3yl0zql","slide":1,"name":"cover-title","text":"Autoware LiDAR 感知节点与输出层级","textPreview":"Autoware LiDAR 感知节点与输出层级","textChars":24,"textLines":1,"bbox":[56,184,760,170]}
+{"kind":"textbox","id":"sh/ts7md4r2","slide":1,"name":"矩形 5","text":"CAMERA","textPreview":"CAMERA","textChars":6,"textLines":1,"bbox":[892,190,120,30]}
+{"kind":"textbox","id":"sh/sryl4zqx","slide":1,"name":"矩形 6","text":"2D ROI\n类别与语义","textPreview":"2D ROI | 类别与语义","textChars":12,"textLines":2,"bbox":[892,228,150,88]}
+{"kind":"textbox","id":"sh/fu94fe98","slide":1,"name":"矩形 7","text":"+","textPreview":"+","textChars":1,"textLines":1,"bbox":[1038,266,40,44]}
+{"kind":"textbox","id":"sh/utg3698n","slide":1,"name":"矩形 8","text":"LiDAR","textPreview":"LiDAR","textChars":5,"textLines":1,"bbox":[1082,190,90,30]}
+{"kind":"textbox","id":"sh/wn6dc7eh","slide":1,"name":"矩形 9","text":"3D\n位置与形状","textPreview":"3D | 位置与形状","textChars":8,"textLines":2,"bbox":[1056,228,110,88]}
+{"kind":"textbox","id":"sh/ul4vaxgb","slide":1,"name":"矩形 11","text":"FUSION","textPreview":"FUSION","textChars":6,"textLines":1,"bbox":[948,360,150,30]}
+{"kind":"textbox","id":"sh/vmdcj2xw","slide":1,"name":"矩形 12","text":"确认同一目标","textPreview":"确认同一目标","textChars":6,"textLines":1,"bbox":[914,404,220,48]}
+{"kind":"textbox","id":"sh/5sfepcfe","slide":1,"name":"矩形 14","text":"基于官方架构与接口文档梳理","textPreview":"基于官方架构与接口文档梳理","textChars":13,"textLines":1,"bbox":[78,585,680,25]}
+{"kind":"textbox","id":"sh/s72xofmh","slide":2,"name":"slide-2-eyebrow","text":"WHY FUSION","textPreview":"WHY FUSION","textChars":10,"textLines":1,"bbox":[56,30,600,22]}
+{"kind":"textbox","id":"sh/9072xkry","slide":2,"name":"slide-2-title","text":"相机给语义，LiDAR 给三维几何","textPreview":"相机给语义，LiDAR 给三维几何","textChars":17,"textLines":1,"bbox":[56,58,1168,64]}
+{"kind":"textbox","id":"sh/b29kza94","slide":2,"name":"矩形 3","text":"组会学习汇报 · 2026.08.05","textPreview":"组会学习汇报 · 2026.08.05","textChars":19,"textLines":1,"bbox":[56,688,360,18]}
+{"kind":"textbox","id":"sh/a10jqpsj","slide":2,"name":"矩形 4","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1170,686,54,20]}
+{"kind":"textbox","id":"sh/x4r21kru","slide":2,"name":"矩形 5","text":"两类传感器观察同一世界，但回答的问题不同。","textPreview":"两类传感器观察同一世界，但回答的问题不同。","textChars":21,"textLines":1,"bbox":[56,124,820,34]}
+{"kind":"textbox","id":"sh/r65knqtk","slide":2,"name":"矩形 7","text":"CAMERA","textPreview":"CAMERA","textChars":6,"textLines":1,"bbox":[110,238,150,28]}
+{"kind":"textbox","id":"sh/q5wjelsz","slide":2,"name":"矩形 8","text":"相机：是什么","textPreview":"相机：是什么","textChars":6,"textLines":1,"bbox":[110,282,300,44]}
+{"kind":"textbox","id":"sh/ove9o7yd","slide":2,"name":"矩形 9","text":"车辆、行人等类别\n颜色、标志与纹理\n单目深度和尺度不稳定","textPreview":"车辆、行人等类别 | 颜色、标志与纹理 | 单目深度和尺度不稳定","textChars":28,"textLines":3,"bbox":[110,352,320,142]}
+{"kind":"textbox","id":"sh/9wnqhczy","slide":2,"name":"矩形 10","text":"+","textPreview":"+","textChars":1,"textLines":1,"bbox":[463,338,70,70]}
+{"kind":"textbox","id":"sh/nu58f2hs","slide":2,"name":"矩形 12","text":"LiDAR","textPreview":"LiDAR","textChars":5,"textLines":1,"bbox":[564,238,150,28]}
+{"kind":"textbox","id":"sh/wjy9sry9","slide":2,"name":"矩形 13","text":"LiDAR：在哪里、多大","textPreview":"LiDAR：在哪里、多大","textChars":12,"textLines":1,"bbox":[564,282,350,44]}
+{"kind":"textbox","id":"sh/xk7qlczu","slide":2,"name":"矩形 14","text":"距离、位置与轮廓\n直接形成三维点云\n原始点的类别信息较弱","textPreview":"距离、位置与轮廓 | 直接形成三维点云 | 原始点的类别信息较弱","textChars":28,"textLines":3,"bbox":[564,352,340,142]}
+{"kind":"textbox","id":"sh/bip8jmho","slide":2,"name":"矩形 16","text":"FUSION","textPreview":"FUSION","textChars":6,"textLines":1,"bbox":[986,246,180,30]}
+{"kind":"textbox","id":"sh/cnupgny5","slide":2,"name":"矩形 17","text":"是不是\n同一个目标？","textPreview":"是不是 | 同一个目标？","textChars":10,"textLines":2,"bbox":[982,300,188,110]}
+{"kind":"textbox","id":"sh/t8byxkn2","slide":2,"name":"矩形 19","text":"相机补类别，LiDAR 补三维，融合节点确认两边描述的是同一目标。","textPreview":"相机补类别，LiDAR 补三维，融合节点确认两边描述的是同一目标。","textChars":33,"textLines":1,"bbox":[140,563,1024,30]}
+{"kind":"textbox","id":"sh/03ix43e5","slide":3,"name":"slide-3-eyebrow","text":"NODE 01 · POINT-LEVEL","textPreview":"NODE 01 · POINT-LEVEL","textChars":21,"textLines":1,"bbox":[56,30,600,22]}
+{"kind":"textbox","id":"sh/cza94vmx","slide":3,"name":"slide-3-title","text":"FRNet 给每个点补上语义","textPreview":"FRNet 给每个点补上语义","textChars":14,"textLines":1,"bbox":[56,58,1168,64]}
+{"kind":"textbox","id":"sh/298ryl4v","slide":3,"name":"矩形 3","text":"组会学习汇报 · 2026.08.05","textPreview":"组会学习汇报 · 2026.08.05","textChars":19,"textLines":1,"bbox":[56,688,360,18]}
+{"kind":"textbox","id":"sh/3ah8rqlg","slide":3,"name":"矩形 4","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1170,686,54,20]}
+{"kind":"textbox","id":"sh/n2l4fq98","slide":3,"name":"矩形 9","text":"它回答“每个点是什么”，尚未回答“这里有几个目标”。","textPreview":"它回答“每个点是什么”，尚未回答“这里有几个目标”。","textChars":26,"textLines":1,"bbox":[78,599,646,25]}
+{"kind":"textbox","id":"sh/m1c3mlsn","slide":3,"name":"矩形 10","text":"具体输入输出例子","textPreview":"具体输入输出例子","textChars":8,"textLines":1,"bbox":[786,154,330,34]}
+{"kind":"textbox","id":"sh/943mhgre","slide":3,"name":"矩形 11","text":"假设场景：前方约 12 m 一辆车，右前方约 8 m 一名行人","textPreview":"假设场景：前方约 12 m 一辆车，右前方约 8 m 一名行人","textChars":31,"textLines":1,"bbox":[786,195.93,414,36.07]}
+{"kind":"textbox","id":"sh/83ulovat","slide":3,"name":"矩形 12","text":"INPUT    xyz代表前后左右高度    intensity代表激光反射强度","textPreview":"INPUT    xyz代表前后左右高度    intensity代表激光反射强度","textChars":41,"textLines":1,"bbox":[786,242,390.53,24]}
+{"kind":"textbox","id":"sh/v6l4jq94","slide":3,"name":"矩形 13","text":"sensor_msgs/msg/PointCloud2","textPreview":"sensor_msgs/msg/PointCloud2","textChars":27,"textLines":1,"bbox":[786,270,410,30]}
+{"kind":"textbox","id":"sh/x8nml0ra","slide":3,"name":"矩形 15","text":"P₁=(12.1, 1.8, 0.6), intensity=82\nP₂=(12.3, 1.7, 0.7), intensity=76\nP₃=(8.2, −2.0, 1.1), intensity=35","textPreview":"P₁=(12.1, 1.8, 0.6), intensity=82 | P₂=(12.3, 1.7, 0.7), intensity=76 | P₃=(8.2, −2.0, 1.1), intensity=35","textChars":101,"textLines":3,"bbox":[804,318,378,74]}
+{"kind":"textbox","id":"sh/w7ulsvqp","slide":3,"name":"矩形 16","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[950,406,82,28]}
+{"kind":"textbox","id":"sh/ja54na9g","slide":3,"name":"矩形 17","text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[786,440,110,24]}
+{"kind":"textbox","id":"sh/i9w3u58v","slide":3,"name":"矩形 18","text":"语义 PointCloud2","textPreview":"语义 PointCloud2","textChars":14,"textLines":1,"bbox":[786,468,414,30]}
+{"kind":"textbox","id":"sh/f29gbyx0","slide":3,"name":"矩形 20","text":"P₁ → CAR，probability=0.92\nP₂ → CAR，probability=0.89\nP₃ → PEDESTRIAN，probability=0.81","textPreview":"P₁ → CAR，probability=0.92 | P₂ → CAR，probability=0.89 | P₃ → PEDESTRIAN，probability=0.81","textChars":84,"textLines":3,"bbox":[804,516,378,104]}
+{"kind":"image","id":"im/21kvutkb","slide":3,"name":"图片 27","geometry":"roundRect","bbox":[66,228.83,670,222.34]}
+{"kind":"textbox","id":"sh/3ytsrmpw","slide":4,"name":"slide-4-eyebrow","text":"NODE 02 · INSTANCE-LEVEL","textPreview":"NODE 02 · INSTANCE-LEVEL","textChars":24,"textLines":1,"bbox":[56,30,600,22]}
+{"kind":"textbox","id":"sh/1cj2d8b6","slide":4,"name":"slide-4-title","text":"Apollo 把点分成实例，并保留每个目标的点簇","textPreview":"Apollo 把点分成实例，并保留每个目标的点簇","textChars":24,"textLines":1,"bbox":[56,58,1168,64]}
+{"kind":"textbox","id":"sh/rm1k7yt4","slide":4,"name":"矩形 3","text":"组会学习汇报 · 2026.08.05","textPreview":"组会学习汇报 · 2026.08.05","textChars":19,"textLines":1,"bbox":[56,688,360,18]}
+{"kind":"textbox","id":"sh/ql8jytsj","slide":4,"name":"矩形 4","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1170,686,54,20]}
+{"kind":"textbox","id":"sh/kbm987y5","slide":4,"name":"矩形 9","text":"它回答“哪些点属于同一目标”，点簇仍可继续投影到图像。","textPreview":"它回答“哪些点属于同一目标”，点簇仍可继续投影到图像。","textChars":27,"textLines":1,"bbox":[78,599,646,25]}
+{"kind":"textbox","id":"sh/5cva1cfq","slide":4,"name":"矩形 10","text":"具体输入输出例子","textPreview":"具体输入输出例子","textChars":8,"textLines":1,"bbox":[786,154,330,34]}
+{"kind":"textbox","id":"sh/i94r6xgz","slide":4,"name":"矩形 11","text":"假设场景：前方约 12 m 一辆车，右前方约 8 m 一名行人\n","textPreview":"假设场景：前方约 12 m 一辆车，右前方约 8 m 一名行人 |","textChars":32,"textLines":2,"bbox":[786,190,414,42]}
+{"kind":"textbox","id":"sh/jadsz2xk","slide":4,"name":"矩形 12","text":"INPUT","textPreview":"INPUT","textChars":5,"textLines":1,"bbox":[786,242,110,24]}
+{"kind":"textbox","id":"sh/w72947yt","slide":4,"name":"矩形 13","text":"sensor_msgs/msg/PointCloud2","textPreview":"sensor_msgs/msg/PointCloud2","textChars":27,"textLines":1,"bbox":[786,270,410,30]}
+{"kind":"textbox","id":"sh/a5kr2xg3","slide":4,"name":"矩形 15","text":"P₁=(12.1, 1.8, 0.6)，P₂=(12.3, 1.7, 0.7)\nP₃=(8.2, −2.0, 1.1)，","textPreview":"P₁=(12.1, 1.8, 0.6)，P₂=(12.3, 1.7, 0.7) | P₃=(8.2, −2.0, 1.1)，","textChars":60,"textLines":2,"bbox":[804,318,378,74]}
+{"kind":"textbox","id":"sh/v6tsv2xo","slide":4,"name":"矩形 16","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[950,406,82,28]}
+{"kind":"textbox","id":"sh/g36tgryd","slide":4,"name":"矩形 17","text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[786,440,110,24]}
+{"kind":"textbox","id":"sh/h4fa9wfy","slide":4,"name":"矩形 18","text":"DetectedObjectsWithFeature","textPreview":"DetectedObjectsWithFeature","textChars":26,"textLines":1,"bbox":[786,468,414,30]}
+{"kind":"textbox","id":"sh/oz29krqh","slide":4,"name":"矩形 20","text":"Object #1：CAR，cluster={P₁, P₂, …}\nObject #2：PEDESTRIAN，cluster={P₃, …}","textPreview":"Object #1：CAR，cluster={P₁, P₂, …} | Object #2：PEDESTRIAN，cluster={P₃, …}","textChars":70,"textLines":2,"bbox":[804,516,378,104]}
+{"kind":"image","id":"im/94jq9oju","slide":4,"name":"图片 27","geometry":"roundRect","bbox":[66,170,670,340]}
+{"kind":"textbox","id":"sh/mxc7mts7","slide":7,"name":"slide-7-eyebrow","text":"INTERFACE ROUTING","textPreview":"INTERFACE ROUTING","textChars":17,"textLines":1,"bbox":[56,30,600,22]}
+{"kind":"textbox","id":"sh/cb2tkvap","slide":7,"name":"slide-7-title","text":"输出层级决定模块在架构中的位置","textPreview":"输出层级决定模块在架构中的位置","textChars":15,"textLines":1,"bbox":[56,58,1168,64]}
+{"kind":"textbox","id":"sh/ydkbm5sv","slide":7,"name":"矩形 3","text":"组会学习汇报 · 2026.08.05","textPreview":"组会学习汇报 · 2026.08.05","textChars":19,"textLines":1,"bbox":[56,688,360,18]}
+{"kind":"textbox","id":"sh/zedcfa9g","slide":7,"name":"矩形 4","text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1170,686,54,20]}
+{"kind":"textbox","id":"sh/l0vuh0rm","slide":7,"name":"矩形 6","text":"Apollo","textPreview":"Apollo","textChars":6,"textLines":1,"bbox":[84,160,368,32]}
+{"kind":"textbox","id":"sh/eh0ba1sr","slide":7,"name":"矩形 7","text":"输出：实例点簇","textPreview":"输出：实例点簇","textChars":7,"textLines":1,"bbox":[84,195,368,25]}
+{"kind":"textbox","id":"sh/fi9c369c","slide":7,"name":"矩形 8","text":"字段：类别 · 置信度 · 点簇","textPreview":"字段：类别 · 置信度 · 点簇","textChars":16,"textLines":1,"bbox":[84,223,368,22]}
+{"kind":"textbox","id":"sh/baxkjqlk","slide":7,"name":"矩形 9","text":"→  roi_cluster_fusion","textPreview":"→  roi_cluster_fusion","textChars":21,"textLines":1,"bbox":[84,248,368,24]}
+{"kind":"textbox","id":"sh/xcz2l03q","slide":7,"name":"矩形 11","text":"CenterPoint / TransFusion","textPreview":"CenterPoint / TransFusion","textChars":25,"textLines":1,"bbox":[84,295,368,32]}
+{"kind":"textbox","id":"sh/cbq1sv25","slide":7,"name":"矩形 12","text":"输出：完整 3D 目标","textPreview":"输出：完整 3D 目标","textChars":11,"textLines":1,"bbox":[84,330,368,25]}
+{"kind":"textbox","id":"sh/n6x0fqlo","slide":7,"name":"矩形 13","text":"字段：类别 · 置信度 · 位姿 · 尺寸","textPreview":"字段：类别 · 置信度 · 位姿 · 尺寸","textChars":21,"textLines":1,"bbox":[84,358,368,22]}
+{"kind":"textbox","id":"sh/25ojml43","slide":7,"name":"矩形 14","text":"→  roi_detected_object_fusion","textPreview":"→  roi_detected_object_fusion","textChars":29,"textLines":1,"bbox":[84,383,368,24]}
+{"kind":"textbox","id":"sh/o761ov2t","slide":7,"name":"矩形 16","text":"FRNet","textPreview":"FRNet","textChars":5,"textLines":1,"bbox":[84,430,368,32]}
+{"kind":"textbox","id":"sh/f2d0b6lc","slide":7,"name":"矩形 17","text":"输出：语义点云","textPreview":"输出：语义点云","textChars":7,"textLines":1,"bbox":[84,465,368,25]}
+{"kind":"textbox","id":"sh/eh4jil4r","slide":7,"name":"矩形 18","text":"字段：x/y/z · class_id · probability","textPreview":"字段：x/y/z · class_id · probability","textChars":33,"textLines":1,"bbox":[84,493,368,22]}
+{"kind":"textbox","id":"sh/id4ju1oz","slide":7,"name":"矩形 19","text":"→  先聚类形成目标","textPreview":"→  先聚类形成目标","textChars":10,"textLines":1,"bbox":[84,518,368,24]}
+{"kind":"textbox","id":"sh/s3ml0v61","slide":7,"name":"矩形 25","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[728,420,30,22]}
+{"kind":"textbox","id":"sh/e5o32lor","slide":7,"name":"矩形 27","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[816,420,30,22]}
+{"kind":"textbox","id":"sh/p0zmlk7u","slide":7,"name":"矩形 29","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[808,380,30,22]}
+{"kind":"textbox","id":"sh/nyh4jupo","slide":7,"name":"矩形 31","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[976,474,30,22]}
+{"kind":"textbox","id":"sh/x4j6p47q","slide":7,"name":"矩形 33","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[500,577,24,18]}
+{"kind":"textbox","id":"sh/c3a5wzq5","slide":7,"name":"矩形 34","text":"CenterPoint / TransFusion → 3D detector","textPreview":"CenterPoint / TransFusion → 3D detector","textChars":39,"textLines":1,"bbox":[532,575,330,22]}
+{"kind":"textbox","id":"sh/a18nup8z","slide":7,"name":"矩形 36","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[862,577,24,18]}
+{"kind":"textbox","id":"sh/lsj6t47m","slide":7,"name":"矩形 37","text":"Apollo → LiDAR clustering","textPreview":"Apollo → LiDAR clustering","textChars":25,"textLines":1,"bbox":[894,575,330,22]}
+{"kind":"textbox","id":"sh/wneps3ap","slide":7,"name":"矩形 39","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[500,607,24,18]}
+{"kind":"textbox","id":"sh/honq18ru","slide":7,"name":"矩形 40","text":"FRNet → 语义分割（clustering 前）","textPreview":"FRNet → 语义分割（clustering 前）","textChars":26,"textLines":1,"bbox":[532,605,330,22]}
+{"kind":"textbox","id":"sh/vm58zi94","slide":7,"name":"矩形 42","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[862,607,24,18]}
+{"kind":"textbox","id":"sh/8jupo3ad","slide":7,"name":"矩形 43","text":"ROI fusion → Projection fusion","textPreview":"ROI fusion → Projection fusion","textChars":30,"textLines":1,"bbox":[894,605,330,22]}
+{"kind":"textbox","id":"sh/9k3qx8ry","slide":7,"name":"矩形 44","text":"图源：Autoware 官方感知参考架构","textPreview":"图源：Autoware 官方感知参考架构","textChars":20,"textLines":1,"bbox":[500,642,710,24]}
+{"kind":"image","id":"im/o3qhkreh","slide":7,"name":"图片 68","geometry":"roundRect","bbox":[631.46,166,447.07,390]}
+{"kind":"textbox","id":"sh/x4ne1wni","slide":8,"name":"slide-11-eyebrow","text":"CURRENT STATE → NEXT EVIDENCE","textPreview":"CURRENT STATE → NEXT EVIDENCE","textChars":29,"textLines":1,"bbox":[56,30,600,22]}
+{"kind":"textbox","id":"sh/18byd4zy","slide":8,"name":"slide-11-title","text":"当前完成了架构理解，下一步补真实验证","textPreview":"当前完成了架构理解，下一步补真实验证","textChars":18,"textLines":1,"bbox":[56,58,1168,64]}
+{"kind":"textbox","id":"sh/ri9g7uhw","slide":8,"name":"矩形 3","text":"组会学习汇报 · 2026.08.05","textPreview":"组会学习汇报 · 2026.08.05","textChars":19,"textLines":1,"bbox":[56,688,360,18]}
+{"kind":"textbox","id":"sh/6h0fypgb","slide":8,"name":"矩形 4","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1170,686,54,20]}
+{"kind":"textbox","id":"sh/tkby9kzm","slide":8,"name":"矩形 5","text":"已完成","textPreview":"已完成","textChars":3,"textLines":1,"bbox":[76,168,200,36]}
+{"kind":"textbox","id":"sh/je9g3ahk","slide":8,"name":"矩形 7","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[82,252,34,34]}
+{"kind":"textbox","id":"sh/id0fu50z","slide":8,"name":"矩形 8","text":"感知架构中的融合位置","textPreview":"感知架构中的融合位置","textChars":10,"textLines":1,"bbox":[132,252,420,34]}
+{"kind":"textbox","id":"sh/o7ydoret","slide":8,"name":"矩形 9","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[82,320,34,34]}
+{"kind":"textbox","id":"sh/98rehwve","slide":8,"name":"矩形 10","text":"四个 LiDAR 包的输出层级","textPreview":"四个 LiDAR 包的输出层级","textChars":15,"textLines":1,"bbox":[132,320,420,34]}
+{"kind":"textbox","id":"sh/m5gvmhwn","slide":8,"name":"矩形 11","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[82,388,34,34]}
+{"kind":"textbox","id":"sh/n6pwfmd8","slide":8,"name":"矩形 12","text":"不同输出对应的融合分支","textPreview":"不同输出对应的融合分支","textChars":11,"textLines":1,"bbox":[132,388,420,34]}
+{"kind":"textbox","id":"sh/ehgvihwr","slide":8,"name":"矩形 15","text":"待验证","textPreview":"待验证","textChars":3,"textLines":1,"bbox":[682,168,200,36]}
+{"kind":"textbox","id":"sh/kfixwbe1","slide":8,"name":"矩形 17","text":"○","textPreview":"○","textChars":1,"textLines":1,"bbox":[686,252,34,34]}
+{"kind":"textbox","id":"sh/lgbepgvm","slide":8,"name":"矩形 18","text":"组内工程实际启用的包","textPreview":"组内工程实际启用的包","textChars":10,"textLines":1,"bbox":[736,252,444,34]}
+{"kind":"textbox","id":"sh/tw7e9gnq","slide":8,"name":"矩形 19","text":"○","textPreview":"○","textChars":1,"textLines":1,"bbox":[686,320,34,34]}
+{"kind":"textbox","id":"sh/svydgb65","slide":8,"name":"矩形 20","text":"launch / remapping 与 Topic 类型","textPreview":"launch / remapping 与 Topic 类型","textChars":29,"textLines":1,"bbox":[736,320,444,34]}
+{"kind":"textbox","id":"sh/7u5w765k","slide":8,"name":"矩形 21","text":"○","textPreview":"○","textChars":1,"textLines":1,"bbox":[686,388,34,34]}
+{"kind":"textbox","id":"sh/6twve1oz","slide":8,"name":"矩形 22","text":"相机—LiDAR TF 和时间戳","textPreview":"相机—LiDAR TF 和时间戳","textChars":16,"textLines":1,"bbox":[736,388,444,34]}
+{"kind":"textbox","id":"sh/5sne5wne","slide":8,"name":"矩形 23","text":"○","textPreview":"○","textChars":1,"textLines":1,"bbox":[686,456,34,34]}
+{"kind":"textbox","id":"sh/kredcr6t","slide":8,"name":"矩形 24","text":"rosbag 中的真实数据流与输出","textPreview":"rosbag 中的真实数据流与输出","textChars":17,"textLines":1,"bbox":[736,456,444,34]}
+{"kind":"textbox","id":"sh/i5wva1o3","slide":8,"name":"矩形 26","text":"先根据接口识别数据层级，再决定融合方式。","textPreview":"先根据接口识别数据层级，再决定融合方式。","textChars":20,"textLines":1,"bbox":[88,584,1104,42]}

@@ -1,0 +1,6 @@
+Slides 1-3, 5, and 9-10: content-only rewrites inside inherited source objects; no layout restyling.
+Slide 4: the inherited image is replaced by a local Chinese summary derived from the official interfaces and enlarged within the inherited left figure panel so the complete two-branch process is legible.
+Slide 6: the inherited S7 architecture image is replaced by the official roi_cluster_fusion pipeline, expanded inside the inherited right-hand figure frame, and the old numbered overlays/legend are deleted because they refer only to the replaced architecture image.
+Slide 7: the inherited S6 eyebrow is rewritten and slightly widened to avoid the source render clipping identified during template audit; the official time-offset figure is enlarged within the inherited left figure panel.
+Slide 8: the inherited S7 architecture image is replaced by the official Collector diagram, expanded inside the inherited right-hand figure frame, and the old numbered overlays/legend are deleted because they refer only to the replaced architecture image.
+Official SVGs are rasterized to PNG for reliable WPS/PowerPoint display; wording and sources remain in speaker notes.

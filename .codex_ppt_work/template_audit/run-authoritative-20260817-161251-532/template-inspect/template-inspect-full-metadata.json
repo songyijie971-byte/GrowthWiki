@@ -1,0 +1,45 @@
+{
+  "truncated": false,
+  "metadata": {
+    "revision": "d9l220",
+    "target": {
+      "id": "pr/xdgl61"
+    },
+    "kind": {
+      "requested": "slide,textbox,shape,image,table,chart,notes,layout",
+      "tokens": [
+        "slide",
+        "textbox",
+        "shape",
+        "image",
+        "table",
+        "chart",
+        "notes",
+        "layout"
+      ]
+    },
+    "include": {
+      "requested": "id,slide,name,title,text,textPreview,textChars,textLines,bbox,bboxUnit,isPlaceholder,placeholders,alt,prompt",
+      "tokens": [
+        "id",
+        "slide",
+        "name",
+        "title",
+        "text",
+        "textPreview",
+        "textChars",
+        "textLines",
+        "bbox",
+        "bboxUnit",
+        "isPlaceholder",
+        "placeholders",
+        "alt",
+        "prompt"
+      ]
+    },
+    "exclude": {
+      "tokens": []
+    },
+    "notices": []
+  }
+}

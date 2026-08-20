@@ -1,0 +1,9 @@
+Source deck: 2026-08-05  宋奕杰.pptx
+Source slide count: 8
+Canvas: 1280 x 720, 16:9
+Visual contract: light #F8FAFC background, 56 px page margins, 16 pt blue eyebrow, 48 pt dark navy body-slide title, Microsoft YaHei typography, 1 px footer rule at y=680, muted footer/date and right-aligned page number.
+Reusable patterns selected: S1 cover, S2 three-way comparison, S4/S5 left visual plus right technical explanation, S6 warning/constraint page, S7 three-stage routing with a large right visual, S8 completed-versus-pending close.
+Inherited placeholders: none on masters, layouts, or visible slides. Standard notes placeholders exist only in notes pages.
+Source notes: all eight slides already contain speaker notes with [Sources] blocks; the new deck will replace those notes slide by slide.
+Insertion contract: duplicate mapped slides only; edit inherited text/image objects; delete only the explicitly mapped S7 marker/legend objects on the two full-figure slides; preserve all other chrome, backgrounds, borders, accent bars, and footer rules.
+
