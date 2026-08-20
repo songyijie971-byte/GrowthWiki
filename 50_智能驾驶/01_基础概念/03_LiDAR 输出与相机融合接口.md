@@ -28,24 +28,16 @@ kg_flow_to:
 
 ## 快速选型
 
-| LiDAR 上游 | LiDAR 已形成的结果 | 输出消息 | 接入的 ROI fusion 节点 | 相机侧补上的信息 |
-| --- | --- | --- | --- | --- |
-| **FRNet** | 逐点语义 | `PointCloud2` | `roi_pointcloud_fusion` | 按 2D ROI 抽取、细化点，形成点簇 |
-| **Apollo Instance Segmentation** | 实例点簇 | `DetectedObjectsWithFeature` | `roi_cluster_fusion` | ROI 匹配后更新点簇标签 |
-| **CenterPoint / LiDAR TransFusion** | 完整 3D 目标 | `DetectedObjects` | `roi_detected_object_fusion` | ROI 匹配后更新目标类别 |
-
-> [!tip] 一眼区分
-> ```text
-> PointCloud2                   → roi_pointcloud_fusion      → 生成 / 细化点簇
-> DetectedObjectsWithFeature    → roi_cluster_fusion         → 更新点簇标签
-> DetectedObjects               → roi_detected_object_fusion → 更新目标类别
-> ```
->
-> 区别只在于：**LiDAR 侧的对象已经形成到哪一步。**
+| LiDAR 输出                   | 意味着lidar侧已经做到 | 接入哪个节点                     | 相机补上什么             |
+| -------------------------- | ------------- | -------------------------- | ------------------ |
+| PointCloud2                | 只有点还没有聚类      | roi_pointcloud_fusion      | 用 2D 框去「捞」点，帮助点聚成类 |
+| DetectedObjectsWithFeature | 点已经聚成簇了       | roi_cluster_fusion         | 给簇贴/改标签            |
+| DetectedObjects            | 已经完整 3D 目标    | roi_detected_object_fusion | 给目标改类别             |
+ 区别只在于：**LiDAR 侧的对象已经形成到哪一步。**
 
 ## 图中是哪一条流程？
 
-> [!example] `roi_cluster_fusion`：已有点簇的情况
+> [!important] `roi_cluster_fusion`：已有点簇的情况
 > Apollo 这类上游已经输出点簇。融合节点把点簇投影到图像，与相机 ROI 匹配，再用相机检测结果补充或修正标签。
 >
 > ![[50_智能驾驶/99_图片/Autoware-ROI聚类融合.png|700]]
@@ -62,7 +54,7 @@ kg_flow_to:
 
 ## 在项目里怎么认
 
-1. **看 LiDAR 输出类型**：`PointCloud2`、`DetectedObjectsWithFeature` 还是 `DetectedObjects`。
+1. **看 LiDAR 输出类型**：`PointCloud2`、`DetectedObjectsWithFeature` 还是 `DetectedObjects`
 2. **看融合输入**：相机 ROI、`CameraInfo`、LiDAR—Camera TF 与时间戳配置是否齐全。
 3. **看 launch 重映射**：确认工程中的实际 Topic 接线。
 
@@ -73,11 +65,6 @@ kg_flow_to:
 > ros2 interface show autoware_perception_msgs/msg/DetectedObjects
 > ```
 
-## 学习路径
-
-| 上一步 | 下一步 |
-| --- | --- |
-| [[50_智能驾驶/01_基础概念/02_Autoware LiDAR 感知节点|02_LiDAR 感知节点]] | [[50_智能驾驶/01_基础概念/04_相机—LiDAR 投影融合|04_相机—LiDAR 投影融合]] |
 
 > [!quote]- 官方资料
 > - [Image Projection Based Fusion](https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_image_projection_based_fusion/)
